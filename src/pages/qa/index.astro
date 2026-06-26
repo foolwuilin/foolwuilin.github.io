@@ -1,0 +1,33 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { SITE } from '../../lib/site';
+import { getCollection } from 'astro:content';
+const items = (await getCollection('qa')).sort((a,b)=>a.data.order-b.data.order);
+const faqLd = {'@context':'https://schema.org','@type':'FAQPage',
+  mainEntity: items.map(i=>({'@type':'Question',name:i.data.question,
+    acceptedAnswer:{'@type':'Answer',text:i.data.answer}}))};
+const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'Home',item:SITE.url},
+  {'@type':'ListItem',position:2,name:'Q&A',item:new URL('/qa',SITE.url).href}]};
+// group by category, keep order
+const cats = [...new Set(items.map(i=>i.data.category))];
+---
+<BaseLayout title="Scratching & Portablism Q&A" description="Straight answers to common questions about scratching, portablism, gear, and DJ FOOL Wuilin." jsonld={[faqLd, breadcrumbLd]}>
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Q&A'}]} />
+  <main class="container section">
+    <h1>Q&amp;A</h1>
+    <p class="lead">Straight answers to the questions DJs, learners, and fans ask most about scratching, portablism, and DJ FOOL Wuilin.</p>
+    {cats.map(cat => (
+      <section style="margin-top:1.6rem">
+        <h2>{cat}</h2>
+        {items.filter(i=>i.data.category===cat).map(i => (
+          <div class="faq-item">
+            <h3>{i.data.question}</h3>
+            <p>{i.data.answer}</p>
+          </div>
+        ))}
+      </section>
+    ))}
+  </main>
+</BaseLayout>

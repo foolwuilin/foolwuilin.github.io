@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { SITE } from '../../lib/site';
+import { cld } from '../../lib/cloudinary';
+import { getCollection } from 'astro:content';
+export async function getStaticPaths(){
+  const items = (await getCollection('tutorials')).filter(e=>!e.data.draft);
+  return items.map(e=>({params:{slug:e.slug}, props:{entry:e}}));
+}
+const { entry } = Astro.props;
+const { Content } = await entry.render();
+const d = entry.data;
+const pageUrl = new URL(`/tutorials/${entry.slug}`, SITE.url).href;
+const img = cld(d.coverImage,{w:1200});
+const howToLd = {'@context':'https://schema.org','@type':'HowTo',
+  name:d.title, description:d.summary, image:img,
+  ...(d.steps && d.steps.length ? {step: d.steps.map((t,i)=>({'@type':'HowToStep',position:i+1,name:`Step ${i+1}`,text:t}))} : {})};
+const videoLd = d.youtube ? {'@context':'https://schema.org','@type':'VideoObject',
+  name:d.title, description:d.summary, thumbnailUrl:img, uploadDate:d.date.toISOString(),
+  contentUrl:`https://www.youtube.com/watch?v=${d.youtube}`, embedUrl:`https://www.youtube.com/embed/${d.youtube}`} : null;
+const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'Home',item:SITE.url},
+  {'@type':'ListItem',position:2,name:'Tutorials',item:new URL('/tutorials',SITE.url).href},
+  {'@type':'ListItem',position:3,name:d.title,item:pageUrl}]};
+const jsonld = [howToLd, breadcrumbLd]; if(videoLd) jsonld.push(videoLd);
+---
+<BaseLayout title={d.title} description={d.summary} image={img} type="article" jsonld={jsonld}>
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Tutorials',href:'/tutorials'},{label:d.title}]} />
+  <main class="container section">
+    <article class="prose">
+      <span class="tag">{d.level}</span>
+      <h1>{d.title}</h1>
+      <p class="lead">{d.summary}</p>
+      {d.youtube
+        ? (<div class="video"><iframe loading="lazy" src={`https://www.youtube.com/embed/${d.youtube}`} title={d.title} allowfullscreen></iframe></div>)
+        : (<img src={img} width="1200" height="675" alt={d.coverAlt} />)}
+      <Content />
+    </article>
+  </main>
+</BaseLayout>

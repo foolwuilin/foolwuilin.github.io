@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE, sameAs } from '../lib/site';
+const ld = {'@context':'https://schema.org','@type':'Person',name:SITE.name,
+  url:new URL('/contact',SITE.url).href, email:`mailto:${SITE.email}`, sameAs};
+const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'Home',item:SITE.url},
+  {'@type':'ListItem',position:2,name:'Contact',item:new URL('/contact',SITE.url).href}]};
+---
+<BaseLayout title="Contact DJ FOOL Wuilin" description="Get in touch with DJ FOOL Wuilin for bookings, press, and scratch enquiries." jsonld={[ld, breadcrumbLd]}>
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Contact'}]} />
+  <main class="container section">
+    <article class="prose">
+      <h1>Contact</h1>
+      <p class="lead">For bookings, press, or scratch talk, reach DJ FOOL Wuilin here.</p>
+      <p>Email: <a href={`mailto:${SITE.email}`}>{SITE.email}</a></p>
+      <h2>Follow &amp; listen</h2>
+      <ul>
+        <li><a href={SITE.socials.instagram}>Instagram</a></li>
+        <li><a href={SITE.socials.youtube}>YouTube</a></li>
+        <li><a href={SITE.socials.soundcloud}>SoundCloud</a></li>
+        <li><a href={SITE.socials.mixcloud}>Mixcloud</a></li>
+        <li><a href={SITE.socials.facebook}>Facebook</a></li>
+        <li><a href={SITE.socials.linkedin}>LinkedIn</a></li>
+        <li><a href={SITE.socials.wordpress}>Original WordPress site</a></li>
+      </ul>
+      <p class="muted">Based in Taipei, Taiwan.</p>
+    </article>
+  </main>
+</BaseLayout>

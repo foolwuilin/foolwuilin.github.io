@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { SITE } from '../../lib/site';
+import { cld } from '../../lib/cloudinary';
+import { getCollection } from 'astro:content';
+const items = (await getCollection('scratch-the-world')).filter(e=>!e.data.draft).sort((a,b)=>+b.data.date-+a.data.date);
+const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'Home',item:SITE.url},
+  {'@type':'ListItem',position:2,name:'Scratch the World',item:new URL('/scratch-the-world',SITE.url).href}]};
+---
+<BaseLayout title="Scratch the World" description="A city-by-city scratch travel diary from DJ FOOL Wuilin — portablism scratching everywhere he travels." jsonld={breadcrumbLd}>
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Scratch the World'}]} />
+  <main class="container section">
+    <h1>Scratch the World</h1>
+    <p class="lead">Every city is a session. A diary of scratching on location — like a tourist taking photos, but with a turntable.</p>
+    <div class="grid cols-3" style="margin-top:1.5rem">
+      {items.map(e => (
+        <a class="card" href={`/scratch-the-world/${e.slug}`}>
+          <img src={cld(e.data.coverImage,{w:600})} width="600" height="338" loading="lazy" alt={e.data.coverAlt} />
+          <div class="body"><span class="tag">{e.data.location}</span><h3>{e.data.title}</h3><p>{e.data.summary}</p></div>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

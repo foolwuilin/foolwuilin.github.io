@@ -1,0 +1,8 @@
+# Allow all major search and AI crawlers.
+User-agent: *
+Allow: /
+
+# (AI crawlers covered by the wildcard above; listed for clarity)
+# Googlebot, Bingbot, GPTBot, OAI-SearchBot, ClaudeBot, PerplexityBot, Google-Extended
+
+Sitemap: https://foolwuilin.github.io/sitemap-index.xml

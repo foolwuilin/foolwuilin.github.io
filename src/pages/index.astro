@@ -1,0 +1,118 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { SITE, sameAs } from '../lib/site';
+import { cld } from '../lib/cloudinary';
+import { getCollection } from 'astro:content';
+import hero from '../assets/hero.jpg';
+
+const sortByDate = (a, b) => +b.data.date - +a.data.date;
+const stw = (await getCollection('scratch-the-world')).filter(e => !e.data.draft).sort(sortByDate);
+const tut = (await getCollection('tutorials')).filter(e => !e.data.draft).sort((a,b)=>a.data.order-b.data.order);
+const qa  = (await getCollection('qa')).sort((a,b)=>a.data.order-b.data.order);
+
+const latest = [...stw.map(e=>({...e,_k:'scratch-the-world'})), ...tut.map(e=>({...e,_k:'tutorials'}))]
+  .sort((a,b)=>+b.data.date - +a.data.date).slice(0,4);
+const featured = [...stw, ...tut].filter(e=>e.data.featured).slice(0,3);
+
+const categories = [
+  { href:'/scratch-the-world', emoji:'🌍', title:'Scratch the World', desc:'A city-by-city scratch travel diary — scratching everywhere, like a tourist takes photos.' },
+  { href:'/tutorials', emoji:'🎧', title:'Scratch Tutorials', desc:'Step-by-step scratch lessons, from the baby scratch up.' },
+  { href:'/gear', emoji:'🎚️', title:'Portablism & Gear', desc:'What portablism is and the portable setup to start with.' },
+  { href:'/qa', emoji:'❓', title:'Q&A', desc:'Straight answers to the questions DJs and fans ask most.' },
+];
+
+const personLd = {
+  '@context':'https://schema.org','@type':'Person',
+  name: SITE.name, alternateName: SITE.altNames, url: SITE.url,
+  jobTitle:'Turntablist / Portablist DJ', nationality:'Taiwanese',
+  homeLocation:{'@type':'Place', name:'Taipei, Taiwan'},
+  description: SITE.description, sameAs,
+};
+const siteLd = {
+  '@context':'https://schema.org','@type':'WebSite',
+  name: SITE.name, url: SITE.url, description: SITE.description,
+};
+const url = (k, slug) => `/${k}/${slug}`;
+---
+<BaseLayout title={SITE.name} jsonld={[siteLd, personLd]}>
+  <section class="hero">
+    <div class="container">
+      <p class="eyebrow">Scratch the World</p>
+      <h1>I scratch the world like a tourist takes photos</h1>
+      <p class="lead">Tutorials, gear, and a city-by-city scratch diary from DJ FOOL Wuilin (吳奕霖) — a Taipei turntablist and portablist scratching everywhere he travels.</p>
+      <div class="cta">
+        <a class="btn" href="/scratch-the-world">Explore Scratch the World</a>
+        <a class="btn secondary" href="/tutorials">Learn to Scratch</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Browse by category</h2>
+      <div class="grid cols-4">
+        {categories.map(c => (
+          <a class="cat-card" href={c.href}>
+            <div class="emoji">{c.emoji}</div>
+            <h3>{c.title}</h3>
+            <p>{c.desc}</p>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  {featured.length > 0 && (
+    <section class="section">
+      <div class="container">
+        <h2>Editor's choice</h2>
+        <div class="grid cols-3">
+          {featured.map(e => (
+            <a class="card" href={url(e._k ?? (e.collection), e.slug ?? e.id)}>
+              <img src={cld(e.data.coverImage,{w:600})} width="600" height="338" loading="lazy" alt={e.data.coverAlt} />
+              <div class="body"><h3>{e.data.title}</h3><p>{e.data.summary}</p></div>
+            </a>
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="section">
+    <div class="container">
+      <h2>Latest</h2>
+      <div class="grid cols-4">
+        {latest.map(e => (
+          <a class="card" href={url(e._k, e.slug)}>
+            <img src={cld(e.data.coverImage,{w:500})} width="500" height="281" loading="lazy" alt={e.data.coverAlt} />
+            <div class="body">
+              <span class="tag">{e._k === 'tutorials' ? 'Tutorial' : 'Scratch the World'}</span>
+              <h3>{e.data.title}</h3>
+            </div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>Q&A</h2>
+      {qa.slice(0,5).map(item => (
+        <div class="faq-item">
+          <h3>{item.data.question}</h3>
+          <p>{item.data.answer}</p>
+        </div>
+      ))}
+      <p style="margin-top:1rem"><a class="btn secondary" href="/qa">See all questions →</a></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p class="lead">DJ FOOL Wuilin has been cutting since 2012, trained at Scratch DJ Academy NYC &amp; LA, and turns every trip into a scratch session. This site is his knowledge base and travel diary.</p>
+      <p><a class="btn secondary" href="/about">Read his story &amp; press kit →</a></p>
+    </div>
+  </section>
+</BaseLayout>

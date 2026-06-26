@@ -1,0 +1,97 @@
+# Sveltia CMS configuration (Decap-compatible).
+# Auth: GitHub OAuth via a free Cloudflare Worker — set base_url to your worker URL.
+backend:
+  name: github
+  repo: foolwuilin/foolwuilin.github.io   # <-- confirm owner/repo at deploy
+  branch: main
+  base_url: https://REPLACE-WITH-OAUTH-WORKER.workers.dev   # <-- set at deploy (step 6)
+
+site_url: https://foolwuilin.github.io
+display_url: https://foolwuilin.github.io
+publish_mode: simple
+
+# Cloudinary as the media library (cloud: nkbzi14a)
+media_library:
+  name: cloudinary
+  config:
+    cloud_name: nkbzi14a
+    api_key: "225224594181799"
+    default_transformations:
+      - - fetch_format: auto
+          quality: auto
+
+collections:
+  - name: scratch-the-world
+    label: "Scratch the World (travel diary)"
+    folder: src/content/scratch-the-world
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: summary, label: "Summary (answer-first line)", widget: text }
+      - { name: date, label: Date, widget: datetime }
+      - { name: location, label: "Location (e.g. Times Square, NYC)", widget: string }
+      - { name: country, label: Country, widget: string, required: false }
+      - { name: lat, label: Latitude, widget: number, required: false, value_type: float }
+      - { name: lng, label: Longitude, widget: number, required: false, value_type: float }
+      - { name: coverImage, label: Cover image, widget: image, media_library: { name: cloudinary } }
+      - { name: coverAlt, label: "Cover alt text (required for SEO/AI)", widget: string }
+      - { name: youtube, label: "YouTube video ID", widget: string, required: false }
+      - { name: gear, label: Gear used, widget: string, required: false }
+      - { name: featured, label: Featured?, widget: boolean, default: false }
+      - { name: draft, label: Draft?, widget: boolean, default: false }
+      - { name: body, label: Story, widget: markdown }
+
+  - name: tutorials
+    label: "Scratch Tutorials"
+    folder: src/content/tutorials
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: summary, label: "Summary (answer-first line)", widget: text }
+      - { name: date, label: Date, widget: datetime }
+      - { name: level, label: Level, widget: select, options: [beginner, intermediate, advanced] }
+      - { name: order, label: Order, widget: number, default: 0, value_type: int }
+      - { name: coverImage, label: Cover image, widget: image, media_library: { name: cloudinary } }
+      - { name: coverAlt, label: "Cover alt text", widget: string }
+      - { name: youtube, label: "YouTube video ID", widget: string, required: false }
+      - { name: steps, label: "How-to steps (for HowTo schema)", widget: list, required: false, field: { name: step, label: Step, widget: string } }
+      - { name: featured, label: Featured?, widget: boolean, default: false }
+      - { name: draft, label: Draft?, widget: boolean, default: false }
+      - { name: body, label: Lesson, widget: markdown }
+
+  - name: gear
+    label: "Portablism & Gear"
+    folder: src/content/gear
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: summary, label: Summary, widget: text }
+      - { name: date, label: Date, widget: datetime }
+      - { name: order, label: Order, widget: number, default: 0, value_type: int }
+      - { name: coverImage, label: Cover image, widget: image, media_library: { name: cloudinary } }
+      - { name: coverAlt, label: "Cover alt text", widget: string }
+      - { name: draft, label: Draft?, widget: boolean, default: false }
+      - { name: body, label: Body, widget: markdown }
+
+  - name: qa
+    label: "Q&A"
+    folder: src/content/qa
+    create: true
+    slug: "{{fields.order}}-{{slug}}"
+    extension: yaml
+    format: yaml
+    identifier_field: question
+    fields:
+      - { name: question, label: Question, widget: string }
+      - { name: answer, label: Answer, widget: text }
+      - { name: category, label: Category, widget: string, default: General }
+      - { name: order, label: Order, widget: number, default: 0, value_type: int }

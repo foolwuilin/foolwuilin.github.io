@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { SITE } from '../../lib/site';
+import { cld } from '../../lib/cloudinary';
+import { getCollection } from 'astro:content';
+const items = (await getCollection('tutorials')).filter(e=>!e.data.draft).sort((a,b)=>a.data.order-b.data.order);
+const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'Home',item:SITE.url},
+  {'@type':'ListItem',position:2,name:'Tutorials',item:new URL('/tutorials',SITE.url).href}]};
+---
+<BaseLayout title="Scratch Tutorials" description="Step-by-step scratch tutorials from DJ FOOL Wuilin, from the baby scratch up. Learn turntablism and portablism." jsonld={breadcrumbLd}>
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Tutorials'}]} />
+  <main class="container section">
+    <h1>Scratch Tutorials</h1>
+    <p class="lead">Learn to scratch step by step — start with the foundations and build up.</p>
+    <div class="grid cols-3" style="margin-top:1.5rem">
+      {items.map(e => (
+        <a class="card" href={`/tutorials/${e.slug}`}>
+          <img src={cld(e.data.coverImage,{w:600})} width="600" height="338" loading="lazy" alt={e.data.coverAlt} />
+          <div class="body"><span class="tag">{e.data.level}</span><h3>{e.data.title}</h3><p>{e.data.summary}</p></div>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

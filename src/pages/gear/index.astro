@@ -1,0 +1,26 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { SITE } from '../../lib/site';
+import { cld } from '../../lib/cloudinary';
+import { getCollection } from 'astro:content';
+const items = (await getCollection('gear')).filter(e=>!e.data.draft).sort((a,b)=>a.data.order-b.data.order);
+const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'Home',item:SITE.url},
+  {'@type':'ListItem',position:2,name:'Gear',item:new URL('/gear',SITE.url).href}]};
+---
+<BaseLayout title="Portablism & Gear" description="What portablism is and the portable turntable setup to start scratching, from DJ FOOL Wuilin." jsonld={breadcrumbLd}>
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Gear'}]} />
+  <main class="container section">
+    <h1>Portablism &amp; Gear</h1>
+    <p class="lead">What portablism is, and the kit to start scratching anywhere.</p>
+    <div class="grid cols-3" style="margin-top:1.5rem">
+      {items.map(e => (
+        <a class="card" href={`/gear/${e.slug}`}>
+          <img src={cld(e.data.coverImage,{w:600})} width="600" height="338" loading="lazy" alt={e.data.coverAlt} />
+          <div class="body"><h3>{e.data.title}</h3><p>{e.data.summary}</p></div>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

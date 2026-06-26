@@ -1,0 +1,15 @@
+---
+import { SITE, NAV } from '../lib/site';
+import logo from '../assets/logo.png';
+---
+<header class="site-header">
+  <div class="container bar">
+    <a class="brand" href="/">
+      <img src={logo.src} width="34" height="34" alt={SITE.name + ' logo'} />
+      <span>{SITE.name}</span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      {NAV.map((i) => <a href={i.href}>{i.label}</a>)}
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,68 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumbs from '../components/Breadcrumbs.astro';
+import { SITE, sameAs } from '../lib/site';
+import hero from '../assets/hero.jpg';
+
+const personLd = {
+  '@context':'https://schema.org','@type':'Person',
+  name: SITE.name, alternateName: SITE.altNames, url: new URL('/about', SITE.url).href,
+  image: new URL(hero.src, SITE.url).href,
+  jobTitle:'Turntablist / Portablist DJ', nationality:'Taiwanese',
+  homeLocation:{'@type':'Place', name:'Taipei, Taiwan'},
+  description:'Taipei-based turntablist and portablist, DJing since 2012, trained at Scratch DJ Academy (NYC & LA) and Dubspot LA.',
+  alumniOf:[
+    {'@type':'EducationalOrganization', name:'Scratch DJ Academy (New York)'},
+    {'@type':'EducationalOrganization', name:'Scratch DJ Academy (Los Angeles)'},
+    {'@type':'EducationalOrganization', name:'Dubspot Los Angeles'},
+  ],
+  memberOf:[
+    {'@type':'Organization', name:'Skratcher New York'},
+    {'@type':'Organization', name:'Skratch Society'},
+    {'@type':'Organization', name:'Shih Hsin HDC'},
+  ],
+  sameAs,
+};
+const breadcrumbLd = {
+  '@context':'https://schema.org','@type':'BreadcrumbList',
+  itemListElement:[
+    {'@type':'ListItem',position:1,name:'Home',item:SITE.url},
+    {'@type':'ListItem',position:2,name:'About',item:new URL('/about',SITE.url).href},
+  ],
+};
+---
+<BaseLayout title="About DJ FOOL Wuilin" description="Who is DJ FOOL Wuilin (吳奕霖)? Bio, credentials, affiliations, and press kit for the Taipei turntablist and portablist." type="profile" jsonld={[personLd, breadcrumbLd]}>
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'About'}]} />
+  <main class="container section">
+    <article class="prose">
+      <h1>About DJ FOOL Wuilin</h1>
+      <p class="lead">DJ FOOL Wuilin (real name Yilin Wu / 吳奕霖, also known as DJ 負我) is a Taipei-based turntablist and portablist who has been scratching since 2012.</p>
+
+      <img src={hero.src} width="900" height="386" alt="DJ FOOL Wuilin cover image" />
+
+      <h2>Who he is</h2>
+      <p>FOOL Wuilin cut his teeth in the New York scratch scene, training at <strong>Scratch DJ Academy</strong> in both New York and Los Angeles and at <strong>Dubspot LA</strong>. He's affiliated with Skratcher New York, Skratch Society, and Shih Hsin HDC, and is known for taking portable turntables out into the world — scratching in parks, on rooftops, and in the middle of Times Square.</p>
+
+      <h2>Why "Scratch the World"</h2>
+      <p>His philosophy is simple: scratching while traveling is like a tourist taking photos. A photo holds a moment; a scratch does the same. Every city becomes a session, and this site is where those sessions — and the techniques behind them — are documented.</p>
+
+      <h2>Highlights</h2>
+      <ul>
+        <li>New Year's scratching live in Times Square, New York City</li>
+        <li>2017 Echo Music Festival at Gramercy Theatre, NYC (with Rice Boy Liu 柳暢源)</li>
+        <li>2018 Fusion Live Music Fair at Arlene's Grocery, NYC</li>
+        <li>2019 Spring Festival hosted by Gigabyte</li>
+      </ul>
+
+      <h2>Training &amp; affiliations</h2>
+      <ul>
+        <li>Scratch DJ Academy — New York &amp; Los Angeles alumni</li>
+        <li>Dubspot Los Angeles</li>
+        <li>Skratcher New York · Skratch Society · Shih Hsin HDC</li>
+      </ul>
+
+      <h2>Press kit</h2>
+      <p>For booking and press enquiries, see the <a href="/contact">contact page</a>. An electronic press kit (EPK) is available on request.</p>
+    </article>
+  </main>
+</BaseLayout>
