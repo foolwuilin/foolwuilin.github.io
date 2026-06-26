@@ -6,7 +6,7 @@ location: "Times Square, New York City"
 country: "USA"
 lat: 40.7580
 lng: -73.9855
-coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/sample.jpg"
+coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/yu_pv0wkb.jpg"
 coverAlt: "DJ FOOL Wuilin scratching on a portable turntable in Times Square, New York City"
 youtube: "HZjlNust9pw"
 gear: "Portable 7-inch turntable + portable fader"
