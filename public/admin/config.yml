@@ -4,8 +4,7 @@ backend:
   name: github
   repo: foolwuilin/foolwuilin.github.io   # <-- confirm owner/repo at deploy
   branch: main
-  base_url: https://REPLACE-WITH-OAUTH-WORKER.workers.dev   # <-- set at deploy (step 6)
-
+  base_url: https://sveltia-cms-auth.iichizero.workers.dev
 site_url: https://foolwuilin.github.io
 display_url: https://foolwuilin.github.io
 publish_mode: simple
