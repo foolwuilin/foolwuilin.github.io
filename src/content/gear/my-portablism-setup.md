@@ -5,6 +5,9 @@ date: 2024-02-10
 order: 2
 coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/sample.jpg"
 coverAlt: "DJ FOOL Wuilin's portablism travel kit laid out"
+tags:
+  - "Gear"
+  - "Portablism"
 draft: false
 ---
 

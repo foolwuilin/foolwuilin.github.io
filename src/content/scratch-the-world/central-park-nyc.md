@@ -8,6 +8,10 @@ lat: 40.7829
 lng: -73.9654
 coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/sample.jpg"
 coverAlt: "Portable turntable scratch meetup on the grass in Central Park, New York City"
+tags:
+  - "New York"
+  - "Portablism"
+  - "Outdoors"
 featured: true
 draft: false
 ---

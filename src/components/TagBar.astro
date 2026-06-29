@@ -1,0 +1,14 @@
+---
+import { getAllTags } from '../lib/tags';
+interface Props { active?: string; }
+const { active } = Astro.props;
+const tags = await getAllTags();
+---
+{tags.length > 0 && (
+  <nav class="tagbar" aria-label="Filter by tag">
+    <a class={`tagchip${active ? '' : ' active'}`} href="/tags/">All</a>
+    {tags.map((t) => (
+      <a class={`tagchip${active === t.slug ? ' active' : ''}`} href={`/tags/${t.slug}/`}>{t.tag}</a>
+    ))}
+  </nav>
+)}

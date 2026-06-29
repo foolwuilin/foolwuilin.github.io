@@ -10,6 +10,10 @@ coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/maxresdefault_fdkt
 coverAlt: "DJ FOOL Wuilin scratching on a portable turntable in Times Square, New York City"
 youtube: "HZjlNust9pw"
 gear: "Portable 7-inch turntable + portable fader"
+tags:
+  - "New York"
+  - "Portablism"
+  - "Live"
 featured: true
 draft: false
 ---

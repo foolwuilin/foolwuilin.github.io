@@ -1,0 +1,22 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import { SITE } from '../../lib/site';
+import { getAllTags } from '../../lib/tags';
+const tags = await getAllTags();
+const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'Home',item:SITE.url},
+  {'@type':'ListItem',position:2,name:'Tags',item:new URL('/tags',SITE.url).href}]};
+---
+<BaseLayout title="Browse by Tag" description="Browse DJ FOOL Wuilin's tutorials, gear guides, and scratch travel diary by topic tag." jsonld={breadcrumbLd}>
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Tags'}]} />
+  <main class="container section">
+    <h1>Browse by tag</h1>
+    <p class="lead">Pick a topic to see every related post — tutorials, gear, and scratch-the-world entries together.</p>
+    <div class="tagbar" style="margin-top:1.5rem">
+      {tags.map((t) => (
+        <a class="tagchip" href={`/tags/${t.slug}/`}>{t.tag} <span class="muted">({t.count})</span></a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

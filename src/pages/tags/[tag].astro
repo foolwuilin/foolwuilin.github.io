@@ -1,0 +1,52 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumbs from '../../components/Breadcrumbs.astro';
+import TagBar from '../../components/TagBar.astro';
+import { SITE } from '../../lib/site';
+import { cld } from '../../lib/cloudinary';
+import { getAllTags, getPostsByTagSlug } from '../../lib/tags';
+
+export async function getStaticPaths() {
+  const tags = await getAllTags();
+  const paths = [];
+  for (const t of tags) {
+    const posts = await getPostsByTagSlug(t.slug);
+    paths.push({ params: { tag: t.slug }, props: { tag: t.tag, slug: t.slug, posts } });
+  }
+  return paths;
+}
+
+const { tag, slug, posts } = Astro.props;
+const pageUrl = new URL(`/tags/${slug}`, SITE.url).href;
+const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'Home',item:SITE.url},
+  {'@type':'ListItem',position:2,name:'Tags',item:new URL('/tags',SITE.url).href},
+  {'@type':'ListItem',position:3,name:tag,item:pageUrl}]};
+const collectionLd = {'@context':'https://schema.org','@type':'CollectionPage',
+  name:`Posts tagged “${tag}”`, url:pageUrl,
+  about:tag,
+  hasPart: posts.map(p => ({'@type':'CreativeWork', name:p.title, url:new URL(p.url,SITE.url).href}))};
+---
+<BaseLayout title={`Tagged: ${tag}`} description={`Every DJ FOOL Wuilin post tagged “${tag}” — tutorials, gear, and scratch-the-world entries on this topic.`} jsonld={[breadcrumbLd, collectionLd]}>
+  <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Tags',href:'/tags'},{label:tag}]} />
+  <main class="container section">
+    <p class="eyebrow" style="color:var(--muted);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem">Tag</p>
+    <h1>{tag}</h1>
+    <p class="lead">{posts.length} {posts.length === 1 ? 'post' : 'posts'} tagged “{tag}”.</p>
+
+    <TagBar active={slug} />
+
+    <div class="grid cols-3" style="margin-top:1.5rem">
+      {posts.map((p) => (
+        <a class="card" href={p.url}>
+          <img src={cld(p.coverImage,{w:600})} width="600" height="338" loading="lazy" alt={p.coverAlt} />
+          <div class="body">
+            <span class="tag">{p.sectionLabel}</span>
+            <h3>{p.title}</h3>
+            <p>{p.summary}</p>
+          </div>
+        </a>
+      ))}
+    </div>
+  </main>
+</BaseLayout>

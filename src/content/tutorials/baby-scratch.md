@@ -13,6 +13,9 @@ steps:
   - "Push the record forward about an inch, then pull it back to the start. That is one baby scratch."
   - "Keep the motion even — same distance forward and back, steady speed."
   - "Once it is smooth, speed it up and play it in time with a beat."
+tags:
+  - "Beginner"
+  - "Scratch Technique"
 draft: false
 ---
 

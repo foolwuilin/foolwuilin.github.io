@@ -5,6 +5,9 @@ date: 2024-02-01
 order: 1
 coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/sample.jpg"
 coverAlt: "A compact portablism setup: portable turntable and portable fader"
+tags:
+  - "Portablism"
+  - "Beginner"
 featured: true
 draft: false
 ---

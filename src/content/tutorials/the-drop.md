@@ -12,6 +12,9 @@ steps:
   - "Release cleanly so the sound plays forward naturally, fader open."
   - "Catch it and reset to the same start point."
   - "Repeat until you can hit the exact start every time, in rhythm."
+tags:
+  - "Beginner"
+  - "Scratch Technique"
 draft: false
 ---
 

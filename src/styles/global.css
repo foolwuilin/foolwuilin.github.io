@@ -1,12 +1,12 @@
 :root{
-  --bg:#ffffff;
-  --surface:#f6f6f6;
-  --surface-2:#ececec;
-  --text:#141414;
-  --muted:#6e6e6e;
-  --line:#e2e2e2;
-  --accent:#141414;
-  --accent-2:#5a5a5a;
+  --bg:#ffffff;            /* white background */
+  --surface:#f6f6f6;       /* light grey card surface */
+  --surface-2:#ececec;     /* slightly darker grey */
+  --text:#141414;          /* near-black text */
+  --muted:#6e6e6e;         /* grey secondary text */
+  --line:#e2e2e2;          /* light grey borders */
+  --accent:#141414;        /* near-black accent (buttons, emphasis) */
+  --accent-2:#5a5a5a;      /* mid grey secondary accent */
   --maxw:1080px; --radius:14px;
   --font: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
 }
@@ -42,6 +42,14 @@ h1{font-size:2.1rem;line-height:1.2;margin:0 0 .6rem}
 .cat-card h3{margin:.5rem 0 .3rem;color:var(--text)}
 .cat-card p{margin:0;color:var(--muted);font-size:.9rem}
 .tag{display:inline-block;font-size:.72rem;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);border:1px solid var(--line);border-radius:999px;padding:.15rem .55rem}
+.tagbar{display:flex;flex-wrap:wrap;gap:.5rem;margin:1rem 0}
+.tagchip{display:inline-block;font-size:.85rem;padding:.4rem .9rem;border-radius:999px;border:1px solid var(--line);background:#fff;color:var(--text);transition:background .15s,border-color .15s,color .15s}
+.tagchip:hover{background:var(--surface);border-color:#b5b5b5;text-decoration:none}
+.tagchip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tagchip.active .muted{color:#cfcfcf}
+.post-tags{display:flex;flex-wrap:wrap;gap:.5rem;margin:1.4rem 0 0}
+.post-tags a{font-size:.82rem;padding:.3rem .8rem;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.post-tags a:hover{background:var(--surface);border-color:#b5b5b5;text-decoration:none}
 .hero{position:relative;padding:4rem 0 3rem;border-bottom:1px solid var(--line)}
 .hero .eyebrow{color:var(--muted);font-weight:700;letter-spacing:.08em;text-transform:uppercase;font-size:.8rem}
 .hero .cta{display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.4rem}
@@ -66,6 +74,7 @@ h1{font-size:2.1rem;line-height:1.2;margin:0 0 .6rem}
 .video{position:relative;aspect-ratio:16/9;margin:1.4rem 0;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
 .video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .meta{color:var(--muted);font-size:.85rem;margin-bottom:1rem}
+/* Black & white film treatment: photos are greyscale, regaining colour on hover (desktop) */
 .card img,.prose img{filter:grayscale(100%);transition:filter .5s ease}
 .card:hover img,.prose img:hover{filter:grayscale(0)}
 @media(max-width:600px){.nav-links{display:none}}

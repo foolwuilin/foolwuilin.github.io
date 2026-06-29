@@ -3,6 +3,7 @@ import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import { SITE } from '../../lib/site';
 import { cld } from '../../lib/cloudinary';
+import { tagSlug } from '../../lib/tags';
 import { getCollection } from 'astro:content';
 export async function getStaticPaths(){
   const items = (await getCollection('scratch-the-world')).filter(e=>!e.data.draft);
@@ -39,6 +40,9 @@ const jsonld = [articleLd, breadcrumbLd]; if(videoLd) jsonld.push(videoLd);
       <img src={img} width="1200" height="675" alt={d.coverAlt} />
       {d.youtube && (<div class="video"><iframe loading="lazy" src={`https://www.youtube.com/embed/${d.youtube}`} title={d.title} allowfullscreen></iframe></div>)}
       <Content />
+      {d.tags && d.tags.length > 0 && (
+        <div class="post-tags">{d.tags.map((t)=> <a href={`/tags/${tagSlug(t)}/`}>#{t}</a>)}</div>
+      )}
     </article>
   </main>
 </BaseLayout>
