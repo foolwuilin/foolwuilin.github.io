@@ -33,9 +33,17 @@ h1{font-size:2.1rem;line-height:1.2;margin:0 0 .6rem}
 @media(max-width:820px){.grid.cols-4{grid-template-columns:repeat(2,1fr)}.grid.cols-3{grid-template-columns:1fr}.grid.cols-2{grid-template-columns:1fr}}
 .card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;display:flex;flex-direction:column}
 .card img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;display:block}
-.card .body{padding:1rem 1.05rem}
-.card h3{margin:.1rem 0 .4rem;font-size:1.12rem}
+.card .body{padding:1rem 1.05rem;display:flex;flex-direction:column;flex:1}
+.card h3{margin:.4rem 0 .4rem;font-size:1.12rem}
+.card h3 a{color:var(--text)}
+.card h3 a:hover{text-decoration:underline}
 .card p{margin:0;color:var(--muted);font-size:.95rem}
+.card-readmore{display:inline-block;margin-top:.7rem;font-weight:700;color:var(--accent)}
+.card-readmore:hover{text-decoration:underline}
+.card-tags{margin-top:auto;padding-top:.9rem;display:flex;flex-wrap:wrap;align-items:center;gap:.4rem;border-top:1px solid var(--line)}
+.card-tags-label{font-size:.8rem;color:var(--muted);margin-right:.2rem}
+.card-tags > a{font-size:.78rem;padding:.25rem .7rem;border-radius:999px;border:1px solid var(--line);color:var(--text);background:#fff}
+.card-tags > a:hover{background:var(--surface);border-color:#b5b5b5;text-decoration:none}
 .cat-card{display:block;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.3rem;transition:border-color .15s,background .15s}
 .cat-card:hover{border-color:var(--accent);background:#fff;text-decoration:none}
 .cat-card .emoji{font-size:1.7rem;filter:grayscale(100%)}

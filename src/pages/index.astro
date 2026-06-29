@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import PostCard from '../components/PostCard.astro';
 import { SITE, sameAs } from '../lib/site';
-import { cld } from '../lib/cloudinary';
 import { getCollection } from 'astro:content';
 import hero from '../assets/hero.jpg';
+
+const sectionLabel = (k) => (k === 'tutorials' ? 'Tutorial' : k === 'gear' ? 'Gear' : 'Scratch the World');
 
 const sortByDate = (a, b) => +b.data.date - +a.data.date;
 const stw = (await getCollection('scratch-the-world')).filter(e => !e.data.draft).sort(sortByDate);
@@ -68,10 +70,15 @@ const url = (k, slug) => `/${k}/${slug}`;
         <h2>Editor's choice</h2>
         <div class="grid cols-3">
           {featured.map(e => (
-            <a class="card" href={url(e._k ?? (e.collection), e.slug ?? e.id)}>
-              <img src={cld(e.data.coverImage,{w:600})} width="600" height="338" loading="lazy" alt={e.data.coverAlt} />
-              <div class="body"><h3>{e.data.title}</h3><p>{e.data.summary}</p></div>
-            </a>
+            <PostCard
+              url={url(e._k ?? e.collection, e.slug ?? e.id)}
+              coverImage={e.data.coverImage}
+              coverAlt={e.data.coverAlt}
+              category={sectionLabel(e.collection)}
+              title={e.data.title}
+              summary={e.data.summary}
+              tags={e.data.tags}
+            />
           ))}
         </div>
       </div>
@@ -83,13 +90,14 @@ const url = (k, slug) => `/${k}/${slug}`;
       <h2>Latest</h2>
       <div class="grid cols-4">
         {latest.map(e => (
-          <a class="card" href={url(e._k, e.slug)}>
-            <img src={cld(e.data.coverImage,{w:500})} width="500" height="281" loading="lazy" alt={e.data.coverAlt} />
-            <div class="body">
-              <span class="tag">{e._k === 'tutorials' ? 'Tutorial' : 'Scratch the World'}</span>
-              <h3>{e.data.title}</h3>
-            </div>
-          </a>
+          <PostCard
+            url={url(e._k, e.slug)}
+            coverImage={e.data.coverImage}
+            coverAlt={e.data.coverAlt}
+            category={sectionLabel(e._k)}
+            title={e.data.title}
+            tags={e.data.tags}
+          />
         ))}
       </div>
     </div>

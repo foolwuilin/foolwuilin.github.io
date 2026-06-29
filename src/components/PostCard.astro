@@ -1,0 +1,32 @@
+---
+import { cld } from '../lib/cloudinary';
+import { tagSlug } from '../lib/tags';
+interface Props {
+  url: string;
+  coverImage: string;
+  coverAlt: string;
+  category?: string;
+  title: string;
+  summary?: string;
+  tags?: string[];
+  width?: number;
+}
+const { url, coverImage, coverAlt, category, title, summary, tags = [], width = 600 } = Astro.props;
+---
+<div class="card">
+  <a href={url} class="card-media" aria-label={title}>
+    <img src={cld(coverImage, { w: width })} width="600" height="338" loading="lazy" alt={coverAlt} />
+  </a>
+  <div class="body">
+    {category && <span class="tag">{category}</span>}
+    <h3><a href={url}>{title}</a></h3>
+    {summary && <p>{summary}</p>}
+    <a class="card-readmore" href={url}>Read post &rarr;</a>
+    {tags.length > 0 && (
+      <div class="card-tags">
+        <span class="card-tags-label">tags:</span>
+        {tags.map((t) => <a href={`/tags/${tagSlug(t)}/`}>{t}</a>)}
+      </div>
+    )}
+  </div>
+</div>

@@ -2,8 +2,8 @@
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import Breadcrumbs from '../../components/Breadcrumbs.astro';
 import TagBar from '../../components/TagBar.astro';
+import PostCard from '../../components/PostCard.astro';
 import { SITE } from '../../lib/site';
-import { cld } from '../../lib/cloudinary';
 import { getCollection } from 'astro:content';
 const items = (await getCollection('scratch-the-world')).filter(e=>!e.data.draft).sort((a,b)=>+b.data.date-+a.data.date);
 const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
@@ -18,10 +18,7 @@ const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',i
     <TagBar />
     <div class="grid cols-3" style="margin-top:1.5rem">
       {items.map(e => (
-        <a class="card" href={`/scratch-the-world/${e.slug}`}>
-          <img src={cld(e.data.coverImage,{w:600})} width="600" height="338" loading="lazy" alt={e.data.coverAlt} />
-          <div class="body"><span class="tag">{e.data.location}</span><h3>{e.data.title}</h3><p>{e.data.summary}</p></div>
-        </a>
+        <PostCard url={`/scratch-the-world/${e.slug}`} coverImage={e.data.coverImage} coverAlt={e.data.coverAlt} category={e.data.location} title={e.data.title} summary={e.data.summary} tags={e.data.tags} />
       ))}
     </div>
   </main>
