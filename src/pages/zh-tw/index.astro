@@ -18,7 +18,7 @@ const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',i
   <main class="container section">
     <p class="meta">🌐 <a href="/">English</a> ・ <strong>中文（本頁）</strong></p>
     <h1>中文文章</h1>
-    <p class="lead">DJ 負我（吳奕霖）帶著便攜式唱盤環遊世界刷碟的故事、器材與教學。更多內容持續翻譯中。</p>
+        <p class="lead">DJ 負我（吳奕霖）帶著便攜式唱盤環遊世界刷碟的故事、器材與教學。</p>
     <div class="grid cols-3" style="margin-top:1.5rem">
       {items.map((e) => (
         <PostCard url={`/zh-tw/${e.slug}`} coverImage={e.data.coverImage} coverAlt={e.data.coverAlt} category={e.data.location} title={e.data.title} summary={e.data.summary} tags={e.data.tags} />
