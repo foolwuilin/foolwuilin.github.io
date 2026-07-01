@@ -14,6 +14,14 @@ const { Content } = await entry.render();
 const d = entry.data;
 const pageUrl = new URL(`/scratch-the-world/${entry.slug}`, SITE.url).href;
 const img = cld(d.coverImage,{w:1200});
+// Traditional-Chinese translation, if one exists → hreflang + language switch
+const zhMatch = (await getCollection('zh')).find(z => !z.data.draft && z.data.section === 'scratch-the-world' && z.data.enSlug === entry.slug);
+const zhPath = zhMatch ? `/zh-tw/${zhMatch.slug}/` : null;
+const alternates = zhMatch ? [
+  {hreflang:'en', href:pageUrl},
+  {hreflang:'zh-Hant-TW', href:new URL(`/zh-tw/${zhMatch.slug}`, SITE.url).href},
+  {hreflang:'x-default', href:pageUrl},
+] : [];
 const articleLd = {'@context':'https://schema.org','@type':'BlogPosting',
   headline:d.title, description:d.summary, image:img, datePublished:d.date.toISOString(),
   author:{'@type':'Person',name:SITE.name,url:SITE.url},
@@ -29,9 +37,10 @@ const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',i
   {'@type':'ListItem',position:3,name:d.title,item:pageUrl}]};
 const jsonld = [articleLd, breadcrumbLd]; if(videoLd) jsonld.push(videoLd);
 ---
-<BaseLayout title={d.title} description={d.summary} image={img} type="article" jsonld={jsonld}>
+<BaseLayout title={d.title} description={d.summary} image={img} type="article" jsonld={jsonld} alternates={alternates}>
   <Breadcrumbs items={[{label:'Home',href:'/'},{label:'Scratch the World',href:'/scratch-the-world'},{label:d.location}]} />
   <main class="container section">
+    {zhPath && <p class="meta"><strong>English (this page)</strong> ・ 🌐 <a href={zhPath}>中文</a></p>}
     <article class="prose">
       <span class="tag">{d.location}</span>
       <h1>{d.title}</h1>

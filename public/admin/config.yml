@@ -98,3 +98,24 @@ collections:
       - { name: answer, label: Answer, widget: text }
       - { name: category, label: Category, widget: string, default: General }
       - { name: order, label: Order, widget: number, default: 0, value_type: int }
+
+  - name: zh
+    label: "中文文章 (Traditional Chinese)"
+    folder: src/content/zh
+    create: true
+    slug: "{{slug}}"
+    extension: md
+    format: frontmatter
+    fields:
+      - { name: title, label: 標題 Title, widget: string }
+      - { name: summary, label: "摘要 Summary (answer-first)", widget: text }
+      - { name: date, label: 日期 Date, widget: datetime }
+      - { name: section, label: 對應英文分類 Section, widget: select, options: [scratch-the-world, tutorials, gear] }
+      - { name: enSlug, label: "對應英文文章 slug (enSlug)", widget: string }
+      - { name: location, label: 地點 Location, widget: string, required: false }
+      - { name: coverImage, label: 封面圖 Cover image, widget: image, media_library: { name: cloudinary } }
+      - { name: coverAlt, label: 圖片替代文字 Alt text, widget: string }
+      - { name: youtube, label: "YouTube 影片 ID", widget: string, required: false }
+      - { name: tags, label: 標籤 Tags, widget: list, required: false, field: { name: tag, label: Tag, widget: string } }
+      - { name: draft, label: 草稿 Draft?, widget: boolean, default: false }
+      - { name: body, label: 內文 Body, widget: markdown }

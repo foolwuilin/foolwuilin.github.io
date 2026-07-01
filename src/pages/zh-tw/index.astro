@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import PostCard from '../../components/PostCard.astro';
+import { SITE } from '../../lib/site';
+import { getCollection } from 'astro:content';
+const items = (await getCollection('zh')).filter((e) => !e.data.draft).sort((a, b) => +b.data.date - +a.data.date);
+const zhUrl = new URL('/zh-tw', SITE.url).href;
+const alternates = [
+  { hreflang: 'en', href: SITE.url },
+  { hreflang: 'zh-Hant-TW', href: zhUrl },
+  { hreflang: 'x-default', href: SITE.url },
+];
+const breadcrumbLd = {'@context':'https://schema.org','@type':'BreadcrumbList',itemListElement:[
+  {'@type':'ListItem',position:1,name:'首頁',item:SITE.url},
+  {'@type':'ListItem',position:2,name:'中文文章',item:zhUrl}]};
+---
+<BaseLayout title="中文文章 | DJ 負我 Wuilin" description="DJ 負我（吳奕霖）的便攜式刷碟與街頭刷碟故事、器材與教學 —— 繁體中文版。" lang="zh-Hant-TW" alternates={alternates} jsonld={breadcrumbLd}>
+  <main class="container section">
+    <p class="meta">🌐 <a href="/">English</a> ・ <strong>中文（本頁）</strong></p>
+    <h1>中文文章</h1>
+    <p class="lead">DJ 負我（吳奕霖）帶著便攜式唱盤環遊世界刷碟的故事、器材與教學。更多內容持續翻譯中。</p>
+    <div class="grid cols-3" style="margin-top:1.5rem">
+      {items.map((e) => (
+        <PostCard url={`/zh-tw/${e.slug}`} coverImage={e.data.coverImage} coverAlt={e.data.coverAlt} category={e.data.location} title={e.data.title} summary={e.data.summary} tags={e.data.tags} />
+      ))}
+    </div>
+  </main>
+</BaseLayout>

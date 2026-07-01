@@ -65,4 +65,23 @@ const qa = defineCollection({
   }),
 });
 
-export const collections = { 'scratch-the-world': scratchTheWorld, tutorials, gear, qa };
+// Traditional-Chinese (zh-TW) translations. One flat collection; each entry
+// links back to its English page via `section` + `enSlug` for hreflang.
+const zh = defineCollection({
+  type: 'content',
+  schema: z.object({
+    title: z.string(),
+    summary: z.string(),
+    date: z.coerce.date(),
+    section: z.enum(['scratch-the-world', 'tutorials', 'gear']), // English section this belongs to
+    enSlug: z.string(),                                          // matching English entry slug
+    location: z.string().optional(),
+    coverImage: cloudinaryImage,
+    coverAlt: z.string(),
+    youtube: z.string().optional(),
+    tags: z.array(z.string()).default([]),
+    draft: z.boolean().default(false),
+  }),
+});
+
+export const collections = { 'scratch-the-world': scratchTheWorld, tutorials, gear, qa, zh };
