@@ -1,0 +1,29 @@
+---
+// Embeds an Instagram post or reel from its URL, using Instagram's own
+// iframe endpoint (no third-party tracking script). Accepts a full post/reel
+// URL like https://www.instagram.com/p/SHORTCODE/ or .../reel/SHORTCODE/.
+interface Props { url: string; }
+const { url } = Astro.props;
+let src: string | null = null;
+try {
+  const u = new URL(url);
+  if (u.hostname.includes('instagram.com')) {
+    const path = u.pathname.replace(/\/+$/, ''); // strip trailing slash, drop query
+    src = `https://www.instagram.com${path}/embed`;
+  }
+} catch (e) {
+  src = null;
+}
+---
+{src && (
+  <div class="ig-embed">
+    <iframe
+      src={src}
+      title="Instagram post"
+      loading="lazy"
+      frameborder="0"
+      scrolling="no"
+      allowtransparency="true"
+    ></iframe>
+  </div>
+)}

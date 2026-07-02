@@ -16,6 +16,7 @@ const scratchTheWorld = defineCollection({
     coverImage: cloudinaryImage,
     coverAlt: z.string(),
     youtube: z.string().optional(), // YouTube video ID
+    instagram: z.string().url().optional(), // Instagram post/reel URL
     gear: z.string().optional(),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
@@ -34,6 +35,7 @@ const tutorials = defineCollection({
     coverImage: cloudinaryImage,
     coverAlt: z.string(),
     youtube: z.string().optional(),
+    instagram: z.string().url().optional(), // Instagram post/reel URL
     steps: z.array(z.string()).optional(),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
@@ -50,6 +52,7 @@ const gear = defineCollection({
     order: z.number().default(0),
     coverImage: cloudinaryImage,
     coverAlt: z.string(),
+    instagram: z.string().url().optional(), // Instagram post/reel URL
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),
@@ -79,6 +82,7 @@ const zh = defineCollection({
     coverImage: cloudinaryImage,
     coverAlt: z.string(),
     youtube: z.string().optional(),
+    instagram: z.string().url().optional(), // Instagram post/reel URL
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),

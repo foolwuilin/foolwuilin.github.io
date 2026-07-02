@@ -39,6 +39,7 @@ collections:
       - { name: coverImage, label: Cover image, widget: image, media_library: { name: cloudinary } }
       - { name: coverAlt, label: "Cover alt text (required for SEO/AI)", widget: string }
       - { name: youtube, label: "YouTube video ID", widget: string, required: false }
+      - { name: instagram, label: "Instagram post/reel URL", widget: string, required: false }
       - { name: gear, label: Gear used, widget: string, required: false }
       - { name: tags, label: Tags, widget: list, required: false, field: { name: tag, label: Tag, widget: string } }
       - { name: featured, label: Featured?, widget: boolean, default: false }
@@ -61,6 +62,7 @@ collections:
       - { name: coverImage, label: Cover image, widget: image, media_library: { name: cloudinary } }
       - { name: coverAlt, label: "Cover alt text", widget: string }
       - { name: youtube, label: "YouTube video ID", widget: string, required: false }
+      - { name: instagram, label: "Instagram post/reel URL", widget: string, required: false }
       - { name: steps, label: "How-to steps (for HowTo schema)", widget: list, required: false, field: { name: step, label: Step, widget: string } }
       - { name: tags, label: Tags, widget: list, required: false, field: { name: tag, label: Tag, widget: string } }
       - { name: featured, label: Featured?, widget: boolean, default: false }
@@ -81,6 +83,7 @@ collections:
       - { name: order, label: Order, widget: number, default: 0, value_type: int }
       - { name: coverImage, label: Cover image, widget: image, media_library: { name: cloudinary } }
       - { name: coverAlt, label: "Cover alt text", widget: string }
+      - { name: instagram, label: "Instagram post/reel URL", widget: string, required: false }
       - { name: tags, label: Tags, widget: list, required: false, field: { name: tag, label: Tag, widget: string } }
       - { name: draft, label: Draft?, widget: boolean, default: false }
       - { name: body, label: Body, widget: markdown }
@@ -116,6 +119,7 @@ collections:
       - { name: coverImage, label: 封面圖 Cover image, widget: image, media_library: { name: cloudinary } }
       - { name: coverAlt, label: 圖片替代文字 Alt text, widget: string }
       - { name: youtube, label: "YouTube 影片 ID", widget: string, required: false }
+      - { name: instagram, label: "Instagram 貼文/Reel 連結", widget: string, required: false }
       - { name: tags, label: 標籤 Tags, widget: list, required: false, field: { name: tag, label: Tag, widget: string } }
       - { name: draft, label: 草稿 Draft?, widget: boolean, default: false }
       - { name: body, label: 內文 Body, widget: markdown }

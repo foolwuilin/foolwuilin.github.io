@@ -1,5 +1,6 @@
 ---
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import InstagramEmbed from '../../components/InstagramEmbed.astro';
 import { SITE } from '../../lib/site';
 import { cld } from '../../lib/cloudinary';
 import { tagSlug } from '../../lib/tags';
@@ -58,6 +59,7 @@ const dateStr = d.date.toLocaleDateString('zh-TW', { year: 'numeric', month: 'lo
       <p class="lead">{d.summary}</p>
       <img src={img} width="1200" height="675" alt={d.coverAlt} />
       {d.youtube && (<div class="video"><iframe loading="lazy" src={`https://www.youtube.com/embed/${d.youtube}`} title={d.title} allowfullscreen></iframe></div>)}
+      {d.instagram && <InstagramEmbed url={d.instagram} />}
       <Content />
       {d.tags && d.tags.length > 0 && (
         <div class="post-tags">{d.tags.map((t) => <a href={`/tags/${tagSlug(t)}/`}>#{t}</a>)}</div>
