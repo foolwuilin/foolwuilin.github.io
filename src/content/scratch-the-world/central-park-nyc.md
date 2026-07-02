@@ -1,21 +1,18 @@
 ---
-title: A Portable Meetup in Central Park
-summary: One of my favorite scratch sessions ever — cutting up outdoors in Central Park with the Skratcher New York crew.
+title: "A Portable Meetup in Central Park"
+summary: "One of my favorite scratch sessions ever — cutting up outdoors in Central Park with the Skratcher New York crew."
 date: 2018-06-15
-location: Central Park, New York City
-country: USA
+location: "Central Park, New York City"
+country: "USA"
 lat: 40.7829
 lng: -73.9654
-coverImage: https://res.cloudinary.com/nkbzi14a/image/upload/sample.jpg
-coverAlt: Portable turntable scratch meetup on the grass in Central Park, New York City
-youtube: ''
-instagram: ''
-gear: ''
+coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/sample.jpg"
+coverAlt: "Portable turntable scratch meetup on the grass in Central Park, New York City"
 tags:
-  - New York
-  - Portablism
-  - Outdoors
-featured: false
+  - "New York"
+  - "Portablism"
+  - "Outdoors"
+featured: true
 draft: false
 ---
 
