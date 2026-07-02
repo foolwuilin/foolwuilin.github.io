@@ -5,7 +5,7 @@ date: 2025-07-10
 section: "scratch-the-world"
 enSlug: "burj-al-arab-dubai"
 location: "阿拉伯聯合大公國 杜拜 朱美拉古城（Madinat Jumeirah）"
-coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/v1/placeholder-burj-al-arab.jpg"
+coverImage: "/images/jumeirah-burj-al-arab.jpg"
 coverAlt: "DJ 負我在杜拜朱美拉古城，用便攜式唱盤刷碟，背後是帆船造型的 Burj Al Arab 飯店"
 instagram: "https://www.instagram.com/p/DScfLfmE-sX/"
 draft: false

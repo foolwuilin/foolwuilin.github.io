@@ -1,7 +1,12 @@
 import { defineCollection, z } from 'astro:content';
 
-// A Cloudinary delivery URL (full https URL). Transformations are added at render time.
-const cloudinaryImage = z.string().url();
+// A Cloudinary delivery URL (full https URL) OR a root-relative local path like /images/foo.jpg.
+// Transformations are added at render time (Cloudinary URLs only; local paths pass through).
+const cloudinaryImage = z
+  .string()
+  .refine((v) => v.startsWith('http') || v.startsWith('/'), {
+    message: 'coverImage must be a full URL or a root-relative path starting with /',
+  });
 
 const scratchTheWorld = defineCollection({
   type: 'content',

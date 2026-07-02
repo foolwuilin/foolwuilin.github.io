@@ -6,7 +6,7 @@ location: "Madinat Jumeirah, Dubai"
 country: "United Arab Emirates"
 lat: 25.1333
 lng: 55.1858
-coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/v1/placeholder-burj-al-arab.jpg"
+coverImage: "/images/jumeirah-burj-al-arab.jpg"
 coverAlt: "DJ FOOL Wuilin scratching on a portable turntable with the sail-shaped Burj Al Arab hotel in the background at Madinat Jumeirah, Dubai"
 instagram: "https://www.instagram.com/p/DScfLfmE-sX/"
 gear: "Numark PT01 Scratch + Mini Innofader"
