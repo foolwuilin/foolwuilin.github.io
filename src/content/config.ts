@@ -8,6 +8,13 @@ const cloudinaryImage = z
     message: 'coverImage must be a full URL or a root-relative path starting with /',
   });
 
+// An optional URL that tolerates the empty string the CMS writes for blank fields.
+// Treats '' (or null) as "not set" so leaving the field blank never breaks the build.
+const optionalUrl = z.preprocess(
+  (v) => (v === '' || v == null ? undefined : v),
+  z.string().url().optional(),
+);
+
 const scratchTheWorld = defineCollection({
   type: 'content',
   schema: z.object({
@@ -21,7 +28,7 @@ const scratchTheWorld = defineCollection({
     coverImage: cloudinaryImage,
     coverAlt: z.string(),
     youtube: z.string().optional(), // YouTube video ID
-    instagram: z.string().url().optional(), // Instagram post/reel URL
+    instagram: optionalUrl, // Instagram post/reel URL (blank allowed)
     gear: z.string().optional(),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
@@ -40,7 +47,7 @@ const tutorials = defineCollection({
     coverImage: cloudinaryImage,
     coverAlt: z.string(),
     youtube: z.string().optional(),
-    instagram: z.string().url().optional(), // Instagram post/reel URL
+    instagram: optionalUrl, // Instagram post/reel URL (blank allowed)
     steps: z.array(z.string()).optional(),
     tags: z.array(z.string()).default([]),
     featured: z.boolean().default(false),
@@ -57,7 +64,7 @@ const gear = defineCollection({
     order: z.number().default(0),
     coverImage: cloudinaryImage,
     coverAlt: z.string(),
-    instagram: z.string().url().optional(), // Instagram post/reel URL
+    instagram: optionalUrl, // Instagram post/reel URL (blank allowed)
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),
@@ -87,7 +94,7 @@ const zh = defineCollection({
     coverImage: cloudinaryImage,
     coverAlt: z.string(),
     youtube: z.string().optional(),
-    instagram: z.string().url().optional(), // Instagram post/reel URL
+    instagram: optionalUrl, // Instagram post/reel URL (blank allowed)
     tags: z.array(z.string()).default([]),
     draft: z.boolean().default(false),
   }),
