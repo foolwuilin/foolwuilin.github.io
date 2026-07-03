@@ -1,21 +1,22 @@
 ---
-title: "Scratching by the Burj Al Arab in Dubai"
-summary: "Here's a fun one — I brought my little portable turntable to Dubai and scratched a few bars with the Burj Al Arab in the background. I set up around Madinat Jumeirah, which is a free, easy public spot with the best framed view of that famous sail-shaped hotel. The sea breeze keeps you cool even in July, everyone's friendly, and it feels completely safe. If you're planning a Dubai trip and love music, put this on your list."
+title: Scratching by the Burj Al Arab in Dubai
+summary: Here's a fun one — I brought my little portable turntable to Dubai and scratched a few bars with the Burj Al Arab in the background. I set up around Madinat Jumeirah, which is a free, easy public spot with the best framed view of that famous sail-shaped hotel. The sea breeze keeps you cool even in July, everyone's friendly, and it feels completely safe. If you're planning a Dubai trip and love music, put this on your list.
 date: 2025-07-10
-location: "Madinat Jumeirah, Dubai"
-country: "United Arab Emirates"
+location: Madinat Jumeirah, Dubai
+country: United Arab Emirates
 lat: 25.1333
 lng: 55.1858
-coverImage: "/images/jumeirah-burj-al-arab.jpg"
-coverAlt: "DJ FOOL Wuilin scratching on a portable turntable with the sail-shaped Burj Al Arab hotel in the background at Madinat Jumeirah, Dubai"
-instagram: "https://www.instagram.com/p/DScfLfmE-sX/"
-gear: "Numark PT01 Scratch + Mini Innofader"
+coverImage: /images/jumeirah-burj-al-arab.jpg
+coverAlt: DJ FOOL Wuilin scratching on a portable turntable with the sail-shaped Burj Al Arab hotel in the background at Madinat Jumeirah, Dubai
+youtube: ''
+instagram: https://www.instagram.com/p/DScfLfmE-sX/
+gear: Numark PT01 Scratch + Mini Innofader
 tags:
-  - "Dubai"
-  - "Portablism"
-  - "Travel"
-  - "Live"
-featured: false
+  - Dubai
+  - Portablism
+  - Travel
+  - Live
+featured: true
 draft: false
 ---
 
