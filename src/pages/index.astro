@@ -14,7 +14,8 @@ const qa  = (await getCollection('qa')).sort((a,b)=>a.data.order-b.data.order);
 
 const latest = [...stw.map(e=>({...e,_k:'scratch-the-world'})), ...tut.map(e=>({...e,_k:'tutorials'}))]
   .sort((a,b)=>+b.data.date - +a.data.date).slice(0,4);
-const featured = [...stw, ...tut].filter(e=>e.data.featured).slice(0,3);
+// Editor's choice = every post you mark Featured in the CMS, newest first (no cap).
+const featured = [...stw, ...tut].filter(e=>e.data.featured).sort((a,b)=>+b.data.date - +a.data.date);
 
 const categories = [
   { href:'/scratch-the-world', emoji:'🌍', title:'Scratch the World', desc:'A city-by-city scratch travel diary — scratching everywhere, like a tourist takes photos.' },
