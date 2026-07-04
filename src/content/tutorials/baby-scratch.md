@@ -1,23 +1,21 @@
 ---
-title: How to Do a Baby Scratch
-summary: 'The baby scratch is the foundation of every scratch: push the record forward, pull it back, fader open the whole time. Master this first.'
+title: "How to Do a Baby Scratch"
+summary: "The baby scratch is the foundation of every scratch: push the record forward, pull it back, fader open the whole time. Master this first."
 date: 2024-01-10
-level: beginner
+level: "beginner"
 order: 1
-coverImage: https://res.cloudinary.com/nkbzi14a/image/upload/sample.jpg
-coverAlt: Close-up of a hand performing a baby scratch on a portable turntable
-youtube: ''
-instagram: ''
+coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/sample.jpg"
+coverAlt: "Close-up of a hand performing a baby scratch on a portable turntable"
+featured: true
 steps:
-  - Find a sound with a sharp start (a vocal "ahh" or a drum hit works well).
-  - Keep the crossfader open (audio passing through) the whole time.
-  - Push the record forward about an inch, then pull it back to the start. That is one baby scratch.
-  - Keep the motion even — same distance forward and back, steady speed.
-  - Once it is smooth, speed it up and play it in time with a beat.
+  - "Find a sound with a sharp start (a vocal \"ahh\" or a drum hit works well)."
+  - "Keep the crossfader open (audio passing through) the whole time."
+  - "Push the record forward about an inch, then pull it back to the start. That is one baby scratch."
+  - "Keep the motion even — same distance forward and back, steady speed."
+  - "Once it is smooth, speed it up and play it in time with a beat."
 tags:
-  - Beginner
-  - Scratch Technique
-featured: false
+  - "Beginner"
+  - "Scratch Technique"
 draft: false
 ---
 
