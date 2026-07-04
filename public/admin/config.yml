@@ -42,8 +42,8 @@ collections:
       - { name: instagram, label: "Instagram post/reel URL", widget: string, required: false }
       - { name: gear, label: Gear used, widget: string, required: false }
       - { name: tags, label: Tags, widget: list, required: false, field: { name: tag, label: Tag, widget: string } }
-      - { name: featured, label: Featured?, widget: boolean, default: false }
-      - { name: draft, label: Draft?, widget: boolean, default: false }
+      - { name: featured, label: "Featured?", widget: boolean, default: false }
+      - { name: draft, label: "Unpublish (hide from website)?", widget: boolean, default: false, hint: "Turn ON to remove this post from the live site. It stays saved — turn OFF to publish it again." }
       - { name: body, label: Story, widget: markdown }
 
   - name: tutorials
@@ -65,8 +65,8 @@ collections:
       - { name: instagram, label: "Instagram post/reel URL", widget: string, required: false }
       - { name: steps, label: "How-to steps (for HowTo schema)", widget: list, required: false, field: { name: step, label: Step, widget: string } }
       - { name: tags, label: Tags, widget: list, required: false, field: { name: tag, label: Tag, widget: string } }
-      - { name: featured, label: Featured?, widget: boolean, default: false }
-      - { name: draft, label: Draft?, widget: boolean, default: false }
+      - { name: featured, label: "Featured?", widget: boolean, default: false }
+      - { name: draft, label: "Unpublish (hide from website)?", widget: boolean, default: false, hint: "Turn ON to remove this post from the live site. It stays saved — turn OFF to publish it again." }
       - { name: body, label: Lesson, widget: markdown }
 
   - name: gear
@@ -85,7 +85,7 @@ collections:
       - { name: coverAlt, label: "Cover alt text", widget: string }
       - { name: instagram, label: "Instagram post/reel URL", widget: string, required: false }
       - { name: tags, label: Tags, widget: list, required: false, field: { name: tag, label: Tag, widget: string } }
-      - { name: draft, label: Draft?, widget: boolean, default: false }
+      - { name: draft, label: "Unpublish (hide from website)?", widget: boolean, default: false, hint: "Turn ON to remove this post from the live site. It stays saved — turn OFF to publish it again." }
       - { name: body, label: Body, widget: markdown }
 
   - name: qa
@@ -121,5 +121,5 @@ collections:
       - { name: youtube, label: "YouTube 影片 ID", widget: string, required: false }
       - { name: instagram, label: "Instagram 貼文/Reel 連結", widget: string, required: false }
       - { name: tags, label: 標籤 Tags, widget: list, required: false, field: { name: tag, label: Tag, widget: string } }
-      - { name: draft, label: 草稿 Draft?, widget: boolean, default: false }
+      - { name: draft, label: "取消發佈（從網站隱藏）？", widget: boolean, default: false, hint: "打開以將這篇從網站上移除；內容會保留，關閉即可重新發佈。" }
       - { name: body, label: 內文 Body, widget: markdown }
