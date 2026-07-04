@@ -8,4 +8,8 @@ export default defineConfig({
   trailingSlash: 'ignore',
   integrations: [sitemap()],
   build: { format: 'directory' },
+  // Retired pages → forward to their replacement (preserves links + SEO).
+  redirects: {
+    '/tutorials/baby-scratch': '/tutorials/how-to-baby-scratch',
+  },
 });

@@ -69,4 +69,4 @@ This is my ninth year. What began as a way to keep scratching while I travelled 
 
 ## Where to next
 
-That's year nine in the bag. You can follow the whole journey city by city on the [Scratch the World](/scratch-the-world/) map, revisit where it started in [Times Square](/scratch-the-world/times-square-nyc/), or — if this made you want to try it yourself — start with the [baby scratch tutorial](/tutorials/baby-scratch/). Here's to year ten.
+That's year nine in the bag. You can follow the whole journey city by city on the [Scratch the World](/scratch-the-world/) map, revisit where it started in [Times Square](/scratch-the-world/times-square-nyc/), or — if this made you want to try it yourself — start with the [baby scratch tutorial](/tutorials/how-to-baby-scratch/). Here's to year ten.

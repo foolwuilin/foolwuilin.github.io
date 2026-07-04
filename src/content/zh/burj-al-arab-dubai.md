@@ -57,4 +57,4 @@ Madinat Jumeirah（朱美拉古城）是最棒的免費地點之一。這是一�
 
 ## 下一站
 
-杜拜只是其中一站——你可以在 [Scratch the World](/scratch-the-world/) 地圖上跟著看完整趟旅程。如果這篇讓你也想動手試試，就從 [baby scratch 教學](/tutorials/baby-scratch/) 開始吧。你的下一個目的地正在等你。
+杜拜只是其中一站——你可以在 [Scratch the World](/scratch-the-world/) 地圖上跟著看完整趟旅程。如果這篇讓你也想動手試試，就從 [baby scratch 教學](/tutorials/how-to-baby-scratch/) 開始吧。你的下一個目的地正在等你。

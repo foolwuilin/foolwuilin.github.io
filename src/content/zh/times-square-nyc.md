@@ -53,4 +53,4 @@ PT01 可以播放真正的黑膠唱片（7 吋到 12 吋都行），大多數玩
 
 ## 下一站
 
-時代廣場只是其中一站——你可以在 [Scratch the World](/scratch-the-world/) 地圖上跟著看完整趟旅程。如果這篇讓你也想動手試試，就從 [baby scratch 教學](/tutorials/baby-scratch/) 開始吧。走吧，你的城市正在等你。
+時代廣場只是其中一站——你可以在 [Scratch the World](/scratch-the-world/) 地圖上跟著看完整趟旅程。如果這篇讓你也想動手試試，就從 [baby scratch 教學](/tutorials/how-to-baby-scratch/) 開始吧。走吧，你的城市正在等你。

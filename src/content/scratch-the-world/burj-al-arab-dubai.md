@@ -65,4 +65,4 @@ In my experience, very. Dubai feels calm, friendly, and orderly, with very littl
 
 ## Where to next
 
-Dubai was just one stop — follow the whole trip on the [Scratch the World](/scratch-the-world/) map. And if this made you want to try it yourself, start with the [baby scratch tutorial](/tutorials/baby-scratch/). Your next destination is waiting.
+Dubai was just one stop — follow the whole trip on the [Scratch the World](/scratch-the-world/) map. And if this made you want to try it yourself, start with the [baby scratch tutorial](/tutorials/how-to-baby-scratch/). Your next destination is waiting.

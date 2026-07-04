@@ -61,4 +61,4 @@ The PT01 plays real records (7-inch up to 12-inch), and most portablists scratch
 
 ## Where to next
 
-Times Square was just one stop — come follow the whole trip on the [Scratch the World](/scratch-the-world/) map. And if this got you itching to try it yourself, start with the [baby scratch tutorial](/tutorials/baby-scratch/). Go on, your city's waiting.
+Times Square was just one stop — come follow the whole trip on the [Scratch the World](/scratch-the-world/) map. And if this got you itching to try it yourself, start with the [baby scratch tutorial](/tutorials/how-to-baby-scratch/). Go on, your city's waiting.

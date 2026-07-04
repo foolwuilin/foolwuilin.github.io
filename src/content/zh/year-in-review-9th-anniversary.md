@@ -69,4 +69,4 @@ draft: false
 
 ## 下一站
 
-第九年，順利收工。你可以在 [Scratch the World](/scratch-the-world/) 地圖上一座城市一座城市地跟著看完整趟旅程，回到一切開始的 [時代廣場](/zh-tw/times-square-nyc/)，或者——如果這篇讓你也想動手試試——就從 [baby scratch 教學](/tutorials/baby-scratch/) 開始吧。敬第十年。
+第九年，順利收工。你可以在 [Scratch the World](/scratch-the-world/) 地圖上一座城市一座城市地跟著看完整趟旅程，回到一切開始的 [時代廣場](/zh-tw/times-square-nyc/)，或者——如果這篇讓你也想動手試試——就從 [baby scratch 教學](/tutorials/how-to-baby-scratch/) 開始吧。敬第十年。
