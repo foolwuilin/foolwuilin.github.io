@@ -4,28 +4,29 @@ summary: "The baby scratch is the very first scratch every DJ should learn — y
 date: 2026-07-05
 level: beginner
 order: 1
-coverImage: "/images/baby-scratch-tutorial.jpg"
-coverAlt: "DJ FOOL Wuilin demonstrating a baby scratch on a portable turntable, pushing and pulling the record with the crossfader open"
-youtube: "bUyNuPAyYpU"
+coverImage: /images/baby-scratch-tutorial.jpg
+coverAlt: DJ FOOL Wuilin demonstrating a baby scratch on a portable turntable, pushing and pulling the record with the crossfader open
+youtube: bUyNuPAyYpU
+instagram: ''
 steps:
-  - "Put a scratch (tool) record on the platter and keep the crossfader fully open so sound plays the whole time."
-  - "Find the start of the 'ahh' sound by gently rocking the record back and forth; stick a marker sticker at that point (I line it up at 12 o'clock or with the needle)."
-  - "Push the record forward — start slow, then speed up — and let your body dip down on the push."
-  - "Pull the record back — again slow then faster — and let your body rise back up on the pull."
-  - "Repeat that push-pull in a steady, relaxed rhythm, keeping the fader open throughout."
-  - "Practice slow first, then gradually speed up; once it feels smooth, try a double scratch — two quick cuts inside one down-and-up body motion."
+  - Put a scratch (tool) record on the platter and keep the crossfader fully open so sound plays the whole time.
+  - Find the start of the 'ahh' sound by gently rocking the record back and forth; stick a marker sticker at that point (I line it up at 12 o'clock or with the needle).
+  - Push the record forward — start slow, then speed up — and let your body dip down on the push.
+  - Pull the record back — again slow then faster — and let your body rise back up on the pull.
+  - Repeat that push-pull in a steady, relaxed rhythm, keeping the fader open throughout.
+  - Practice slow first, then gradually speed up; once it feels smooth, try a double scratch — two quick cuts inside one down-and-up body motion.
 tags:
-  - "Beginner"
-  - "Scratch Technique"
-featured: false
+  - Beginner
+  - Scratch Technique
+featured: true
 draft: false
 ---
 
-The baby scratch is the first scratch every DJ learns, and it's the foundation for every fancier move you'll ever do. The move itself is simple — push a record forward, pull it back, keep the crossfader open the whole time — but there's one small trick that separates a clean baby scratch from a messy, skipping one: doing it *in a dancing way*. Let me walk you through the whole thing the way I teach it in the video above.
+The baby scratch is the first scratch every DJ learns, and it's the foundation for every fancier move you'll ever do. The move itself is simple — push a record forward, pull it back, keep the crossfader open the whole time — but there's one small trick that separates a clean baby scratch from a messy, skipping one: doing it _in a dancing way_. Let me walk you through the whole thing the way I teach it in the video above.
 
 ## What is a baby scratch?
 
-A baby scratch is the most basic scratch in DJing: with the crossfader open, you push a record forward and pull it back with your hand, so a short sound plays forwards then backwards, over and over. There are no fader cuts — it's pure record-hand movement, which is exactly why it's the first thing you should master. Get this steady and everything else gets easier. It traces all the way back to **Grand Wizzard Theodore**, the Bronx DJ widely credited with inventing scratching in the mid-1970s (if you want the origin story, watch the 2001 documentary *Scratch*).
+A baby scratch is the most basic scratch in DJing: with the crossfader open, you push a record forward and pull it back with your hand, so a short sound plays forwards then backwards, over and over. There are no fader cuts — it's pure record-hand movement, which is exactly why it's the first thing you should master. Get this steady and everything else gets easier. It traces all the way back to **Grand Wizzard Theodore**, the Bronx DJ widely credited with inventing scratching in the mid-1970s (if you want the origin story, watch the 2001 documentary _Scratch_).
 
 ## The trick that keeps your record from skipping
 
@@ -37,11 +38,11 @@ The easiest way to feel that groove is to put it in your body, not just your han
 
 ## Set up your record and find the start point
 
-Most people learn on a **scratch record** (also called a tool record). These loop the exact same sound — often a clean "ahh" — around the full 360° of the groove. That's on purpose: even if you skip mid-scratch during something wild, the sound that comes out is identical, so the music never cuts out. Before you scratch, find the *start* of that sound: open the fader, rock the record back and forth until you hear where the "ahh" begins, and put a little sticker there so you can find it fast. I line mine up at the 12 o'clock position or with the needle — but anywhere consistent works.
+Most people learn on a **scratch record** (also called a tool record). These loop the exact same sound — often a clean "ahh" — around the full 360° of the groove. That's on purpose: even if you skip mid-scratch during something wild, the sound that comes out is identical, so the music never cuts out. Before you scratch, find the _start_ of that sound: open the fader, rock the record back and forth until you hear where the "ahh" begins, and put a little sticker there so you can find it fast. I line mine up at the 12 o'clock position or with the needle — but anywhere consistent works.
 
 ## A quick practice plan (slow to fast)
 
-Don't chase speed. Start with slow, even push-pulls — "push, pull, push, pull" — while saying "down, up" in your head to lock in the groove. When that's clean and skip-free, speed it up a notch. Once *that* feels comfortable, try the **double scratch**: two quick cuts inside a single down-and-up body motion. From there, put on a simple beat and scratch along with it. Ten minutes a day beats an hour once a week — the groove becomes muscle memory faster than you'd think.
+Don't chase speed. Start with slow, even push-pulls — "push, pull, push, pull" — while saying "down, up" in your head to lock in the groove. When that's clean and skip-free, speed it up a notch. Once _that_ feels comfortable, try the **double scratch**: two quick cuts inside a single down-and-up body motion. From there, put on a simple beat and scratch along with it. Ten minutes a day beats an hour once a week — the groove becomes muscle memory faster than you'd think.
 
 ## A note on portable turntables
 
@@ -63,8 +64,8 @@ A scratch (or tool) record loops the same sound — often a clean "ahh" — all 
 
 ### Who invented scratching?
 
-Grand Wizzard Theodore (Theodore Livingston) is widely credited with inventing the scratch technique in the mid-1970s in the Bronx, New York. The story goes that he discovered the sound while stopping a record with his hand in his bedroom. You can hear him tell it himself in the 2001 documentary *Scratch*.
+Grand Wizzard Theodore (Theodore Livingston) is widely credited with inventing the scratch technique in the mid-1970s in the Bronx, New York. The story goes that he discovered the sound while stopping a record with his hand in his bedroom. You can hear him tell it himself in the 2001 documentary _Scratch_.
 
 ## Where to next
 
-Once your baby scratch is steady, keep at it daily and take it on the road — follow along on the [Scratch the World](/scratch-the-world/) travel diary to see where this little technique can go. Grab a record and go make some noise.
+Once your baby scratch is steady, the natural next move is learning to cut with the fader — try the [How to Do the Drop (Release)](/tutorials/the-drop/) tutorial next. And if you want to see where this technique can take you, follow along on the [Scratch the World](/scratch-the-world/) travel diary. Grab a record and go make some noise.
