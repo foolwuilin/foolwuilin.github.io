@@ -18,7 +18,7 @@ steps:
 tags:
   - Beginner
   - Scratch Technique
-featured: true
+featured: false
 draft: false
 ---
 
