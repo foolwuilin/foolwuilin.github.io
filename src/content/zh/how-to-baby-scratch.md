@@ -59,4 +59,4 @@ Grand Wizzard Theodore（本名 Theodore Livingston）被廣泛認為在 1970 �
 
 ## 下一站
 
-當你的 baby scratch 練穩之後，很自然的下一步就是學會用推桿切音——接著就練 [How to Do the Drop（放音技巧）](/tutorials/the-drop/) 吧。如果你想看看這個技巧能帶你去哪裡，也可以到 [Scratch the World](/scratch-the-world/) 旅行日記跟著看。拿起一張唱片，去製造一點聲音吧。
+當你的 baby scratch 練穩之後，就每天持續練習、把它帶著走吧——想看看這個技巧能帶你去哪裡，可以到 [Scratch the World](/scratch-the-world/) 旅行日記跟著看。拿起一張唱片，去製造一點聲音吧。

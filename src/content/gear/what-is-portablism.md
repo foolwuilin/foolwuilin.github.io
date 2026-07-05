@@ -3,7 +3,7 @@ title: "What Is Portablism?"
 summary: "Portablism is the art of scratching with portable turntables — a compact, affordable, take-it-anywhere branch of turntablism."
 date: 2024-02-01
 order: 1
-coverImage: "https://res.cloudinary.com/nkbzi14a/image/upload/sample.jpg"
+coverImage: "/images/practice.jpg"
 coverAlt: "A compact portablism setup: portable turntable and portable fader"
 tags:
   - "Portablism"
