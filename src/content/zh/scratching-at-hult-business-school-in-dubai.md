@@ -1,5 +1,5 @@
 ---
-title: Scratching at Hult Business School in Dubai
+title: 在杜拜 Hult 國際商學院刷碟
 summary: 這是一種很不一樣的杜拜停靠站：我把便攜式唱盤帶到位於杜拜知識園區（Dubai Knowledge Park）的 Hult 國際商學院，就在校園裡刷了幾段。這裡緊鄰杜拜網路城（Dubai Internet City），是整座城市的科技重鎮，氛圍安靜又現代——身邊是學生和上班族，而不是觀光客。如果你在杜拜念書或工作，又剛好喜歡音樂，這裡是個輕鬆又友善、很適合架起唱盤開刷的角落。
 date: 2025-07-16T12:00
 section: scratch-the-world
