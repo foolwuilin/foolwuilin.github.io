@@ -1,5 +1,5 @@
 ---
-title: A Scratch Picnic in Union Square, New York
+title: 紐約聯合廣場的刷碟野餐
 summary: 在第一支 Scratch the World 短片之後一週，我和朋友 Marc 帶著便攜式唱盤來到紐約的聯合廣場公園，來一場名副其實的「刷碟野餐」。2017 年 7 月 2 日，我們在北側狗狗運動場旁的草地上攤開行李，架起一台 Numark PT01，就在梧桐樹蔭下刷了幾段。這篇要說的，就是怎麼把一座紐約公園變成自己的小小舞台。
 date: 2017-07-02T12:00
 section: scratch-the-world
