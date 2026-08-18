@@ -72,7 +72,9 @@ h1{font-size:2.1rem;line-height:1.2;margin:0 0 .6rem}
 .site-footer a:hover{color:var(--accent)}
 .breadcrumbs{font-size:.85rem;color:var(--muted);padding:1rem 0 0}
 .breadcrumbs a{color:var(--muted)}
-.prose{max-width:720px}
+.prose{max-width:720px;margin-inline:auto}
+body:has(.container > .prose) main.container,
+body:has(.container > .prose) nav.breadcrumbs.container{max-width:760px}
 .prose h2{margin-top:2rem}
 .prose a{text-decoration:underline}
 .prose img{border-radius:var(--radius);margin:1.4rem 0}
