@@ -1,5 +1,5 @@
 ---
-title: 'Where Scratch the World Began: Manhattan, 2017'
+title: Scratch the World 的起點：2017 年的曼哈頓
 summary: 這是 Scratch the World 的第一站。2017 年 6 月的一個夏日，我在曼哈頓的一張桌子上架起小小的便攜式唱盤，和我的朋友 Marc 一起，接上無線的 Mixfader，就在紐約街頭的空氣裡刷了幾段。這篇就是這一切怎麼開始的故事——以及為什麼曼哈頓的街頭，是最適合開始的地方。
 date: 2017-06-25T12:00
 section: scratch-the-world
