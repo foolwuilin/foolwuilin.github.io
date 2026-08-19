@@ -1,5 +1,5 @@
 ---
-title: A New Tonearm at Cooper Square, Manhattan
+title: 曼哈頓庫柏廣場的新唱臂
 summary: 2017 年 7 月 30 日，我帶著 Numark PT01 來到曼哈頓的庫柏廣場（Cooper Square）——這個下城十字路口，正是傳奇的 Scratch DJ Academy 多年來的所在地——只為了把一支全新的唱臂磨合開來。即使那天心情有點低落，在人行道上刷了幾段，整個下午就翻轉了過來。這篇要說的，就是在嘻哈老家門口刷碟是什麼感覺。
 date: 2017-07-30T12:00
 section: scratch-the-world
