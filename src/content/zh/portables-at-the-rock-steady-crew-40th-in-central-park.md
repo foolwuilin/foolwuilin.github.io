@@ -1,5 +1,5 @@
 ---
-title: Portables at the Rock Steady Crew 40th in Central Park
+title: 在中央公園刷進 Rock Steady Crew 40 週年：便攜唱盤的 cypher
 summary: 2017 年 7 月 30 日，Rock Steady Crew 在紐約中央公園的 Rumsey Playfield 舉辦 40 週年慶典。我帶著一台用電池跑的 Numark PT01，在場地外草地上的 cypher 裡輪了一段。這篇要說的，就是怎麼只靠一個側背包，刷進嘻哈最大的一場家族聚會。
 date: 2017-08-01T12:00
 section: scratch-the-world
