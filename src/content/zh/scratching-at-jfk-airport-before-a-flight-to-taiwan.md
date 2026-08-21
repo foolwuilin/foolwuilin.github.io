@@ -1,5 +1,5 @@
 ---
-title: Scratching at JFK Airport Before a Flight to Taiwan
+title: 在甘迺迪機場刷一段，然後飛回台灣
 summary: 2017 年 8 月 28 日，在飛回台灣的班機起飛前幾個小時，我在紐約甘迺迪國際機場（JFK）的出境大廳裡，拿出一台用電池的 Numark PT01，刷下這趟旅程在紐約的最後一段。這篇要說的，就是在 JFK 報到與登機之間，硬是塞進一場便攜唱盤 session 是什麼感覺。
 date: 2017-08-28T12:00
 section: scratch-the-world
