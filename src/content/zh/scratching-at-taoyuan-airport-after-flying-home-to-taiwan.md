@@ -1,5 +1,5 @@
 ---
-title: Scratching at Taoyuan Airport After Flying Home to Taiwan
+title: 在桃園機場刷一段，剛從紐約飛回台灣
 summary: 2017 年 8 月 29 日，帶著時差、剛下了飛十五個小時的紐約航班，我在桃園國際機場放下那台用電池的 Numark PT01，刷了 Scratch the World 回到家鄉後的第一段。這篇寫的是在台北門戶、那個超級有秩序的入境大廳裡刷便攜唱盤是什麼感覺——以及為什麼我平常的招式一直跳針。
 date: 2017-08-29T12:00
 section: scratch-the-world
