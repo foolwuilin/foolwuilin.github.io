@@ -1,5 +1,5 @@
 ---
-title: Scratching Among the Gundams at Syntrend, Taipei
+title: 與鋼彈一起刷碟：台北三創生活園區
 summary: 2017 年 9 月 1 日，我把用電池供電的 Numark PT01 帶進台北三創生活園區（三創），這座光華數位商圈裡玻璃與霓虹交織的科技殿堂，就在忠孝新生站旁邊，在一尊等身大的鋼彈和一排帝國風暴兵之間刷了幾段。這篇要說的，就是在全台灣最喧鬧的科技神殿裡刷便攜式唱盤是什麼感覺——低調地，而且完全是在規則之外。
 date: 2017-09-01T12:00
 section: scratch-the-world
