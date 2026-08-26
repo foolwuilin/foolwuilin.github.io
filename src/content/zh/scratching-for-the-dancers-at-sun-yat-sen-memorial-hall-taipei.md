@@ -1,5 +1,5 @@
 ---
-title: Scratching for the Dancers at Sun Yat-sen Memorial Hall, Taipei
+title: 為舞者刷一段碟：台北國父紀念館
 summary: 2017 年 9 月 3 日，一台電池供電的 Numark PT01 便攜式唱盤，出現在台北國父紀念館那片開闊的石磚廣場上——這裡是全台北街舞者的大本營——只為在傍晚的舞者之間，刷上短短一段游擊 session。
 date: 2017-09-03T12:00:00
 section: scratch-the-world
