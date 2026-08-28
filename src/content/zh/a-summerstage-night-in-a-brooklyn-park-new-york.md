@@ -1,5 +1,5 @@
 ---
-title: A SummerStage Night in a Brooklyn Park, New York
+title: 布魯克林公園的 SummerStage 之夜
 summary: 2017 年 7 月 3 日，我在布魯克林一場免費的 CityParks SummerStage 嘻哈演出人群裡度過了一個傍晚——那時 Mobb Deep 的 Prodigy 剛離世兩週。DJ Premier 那一脈的 boom-bap 從舞台上滾出來，整座公園跟著唱，那是那種會讓你想起自己當初為何愛上這音樂的夜晚。這是 Scratch the World 地圖上的第三個圖釘——也是我站在人群裡、而不是站在唱盤後面的那一次。
 date: 2017-07-03T12:00:00
 section: scratch-the-world
