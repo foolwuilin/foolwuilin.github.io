@@ -1,5 +1,5 @@
 ---
-title: Scratching Beside the Dragons at Xingtian Temple, Taipei
+title: 在龍與麒麟下刷碟：台北行天宮
 summary: 2017 年 9 月 6 日，我把電池供電的 Numark PT01 帶到台北行天宮——那座禁香、由藍袍志工替人收驚的關公廟——在龍與麒麟的屋脊底下刷了短短一段，貼文標題只寫著一句「Scratching with Chinese Dragon and Kylin」。
 date: 2017-09-06T12:00:00
 section: scratch-the-world
