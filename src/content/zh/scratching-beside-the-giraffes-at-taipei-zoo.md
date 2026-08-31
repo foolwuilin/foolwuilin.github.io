@@ -1,5 +1,5 @@
 ---
-title: Scratching Beside the Giraffes at Taipei Zoo
+title: 在長頸鹿身旁刷碟：台北市立動物園
 summary: 2017 年 9 月 9 日，我把一台電池供電的 Numark PT01 帶進台北市立動物園——全亞洲最大的動物園，藏在木柵貓空山腳的森林裡、就在捷運棕線的終點——在長頸鹿柵欄旁的欄杆上刷了幾段。這篇要說的，就是在一個台灣家庭出遊的日常場景正中央刷便攜式唱盤是什麼感覺：低調、簡短，而且完全在規則之外。
 date: 2017-09-09T12:00:00
 section: scratch-the-world
