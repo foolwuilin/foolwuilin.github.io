@@ -1,5 +1,5 @@
 ---
-title: Scratching Above Muzha with Taipei 101 in the Distance
+title: 在木柵山上刷碟：遠方山稜上的台北 101
 summary: 2017 年 9 月 14 日，我把一台電池供電的 Numark PT01 扛上台北南緣木柵的茶山，在一道矮牆上刷了幾段，而遠方的台北 101 正從山稜線上筆直地升起。
 date: 2017-09-14T12:00:00
 section: scratch-the-world
