@@ -1,5 +1,5 @@
 ---
-title: Scratching at National Taiwan University, Taipei
+title: 在台大校園刷碟：台北國立臺灣大學
 summary: 2017 年 9 月 16 日，我把一台電池供電的 Numark PT01 扛進台北國立臺灣大學（台大）的校園——在椰林大道的大王椰子樹下、在亞熱帶夏天黏答答的尾巴上——刷了幾段粗糙的節奏，而蟬在頭頂尖叫、學生騎著單車一輛輛滑過。
 date: 2017-09-16T12:00:00
 section: scratch-the-world
