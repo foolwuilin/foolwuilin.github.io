@@ -1,5 +1,5 @@
 ---
-title: Chasing the Sunset at Tamsui Fisherman's Wharf
+title: 追逐夕陽：在淡水漁人碼頭刷碟
 summary: 這是 Scratch the World 的淡水站。2017 年 9 月的一個傍晚，我在淡水漁人碼頭（淡水河正要匯入台灣海峽的地方）的木棧道上，架起我那台用電池供電的 Numark PT01 唱盤，趁著天空轉橘，就著海風刷了幾段。這篇要說的，是一個我沒抵達的海灘的故事——以及為什麼漁人碼頭，反而是更好的那個地方。
 date: 2017-09-21T12:00:00
 section: scratch-the-world
