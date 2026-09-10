@@ -1,5 +1,5 @@
 ---
-title: 'Scratching at My Alma Mater: NTNU, Taipei'
+title: 在師大校園刷碟：台北國立臺灣師範大學
 summary: 2017 年 9 月 23 日，我把一台電池供電的 Numark PT01 扛回台北的國立臺灣師範大學（師大）——我在這裡拿到碩士學位——在和平東路旁那道老紅磚校門邊的椰子樹下刷了幾段，而夏末最後的蟬在頭頂上大聲嘶鳴。
 date: 2017-09-23T12:00:00
 section: scratch-the-world
