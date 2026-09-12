@@ -1,5 +1,5 @@
 ---
-title: 'Back at My Old Hangout: Sun Yat-sen Memorial Hall, Taipei'
+title: 回到以前常混的地方：台北國父紀念館
 summary: 回到我以前常混的地方——台北國父紀念館的騎樓迴廊，這座城市非正式的街舞大本營。2017 年 9 月 27 日，我把靠電池運作的 Numark PT01 放上花崗岩石板，刷了幾個小節。
 date: 2017-09-27T12:00:00
 section: scratch-the-world
