@@ -1,5 +1,5 @@
 ---
-title: Scratching for Lunar New Year at Shanghai No.1 Yaohan
+title: 在上海第一八佰伴，為農曆新年刷一段
 summary: 這是 Scratch the World 的上海站。2022 年 1 月 26 日，農曆新年前幾天，我帶著可用電池供電的 Numark PT01，來到浦東上海第一八佰伴前的廣場，在紅燈籠底下刷了幾段，而整個街區正為虎年張燈結綵。這篇要說的，就是在上海最熱鬧的年前購物人潮裡，用一台便攜式唱盤刷碟是什麼感覺——短暫、低調，而且完全是檯面下的。
 date: 2022-01-26T12:00:00
 section: scratch-the-world
