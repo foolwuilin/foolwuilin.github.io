@@ -1,5 +1,5 @@
 ---
-title: 'Scratching at Liberty Square: Chiang Kai-shek Memorial Hall, Taipei'
+title: 在自由廣場刷碟：台北中正紀念堂，2017
 summary: 2017 年 9 月的一個秋日午後，我把便攜式唱盤帶到自由廣場，就在中正紀念堂前刷了幾段——這是台灣為了自由而改名的廣場。這篇分享在台北最大、也最具象徵意義的公共空間之一刷碟，是什麼樣的感覺。
 date: 2017-09-29T12:00:00
 section: scratch-the-world
