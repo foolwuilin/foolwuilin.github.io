@@ -1,5 +1,5 @@
 ---
-title: Scratching in the Neon of Ximending, Taipei
+title: 在西門町的霓虹中刷碟，台北
 summary: 2017 年 10 月 4 日，我帶著一台電池供電的 Numark PT01 Scratch，走進台北萬華、素有「台北原宿」之稱的西門町，就在那條巨大的彩虹斑馬線旁刷了幾段——夾娃娃機的電子音、手搖飲店的雪克杯聲、還有兩家店互尬的華語流行歌，全都在跟我的推桿搶空氣。
 date: 2017-10-04T12:00:00
 section: scratch-the-world
