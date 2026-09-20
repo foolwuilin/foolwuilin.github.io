@@ -1,5 +1,5 @@
 ---
-title: Coming Home to Scratch at Shih Hsin University, Taipei
+title: 回到世新大學刷碟，台北
 summary: 2017 年 10 月 7 日，我帶著一台電池供電的 Numark PT01 Scratch，回到台北文山區那座蓋在山坡上的世新大學（世新大學）——一個對我來說，比這張地圖上幾乎任何一站都更有份量的校園——就在街舞與街頭音樂社群出沒的地方刷了幾段。這是在一片曾經形塑我的土地上刷碟，是什麼感覺。
 date: 2017-10-07T12:00:00
 section: scratch-the-world
