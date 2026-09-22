@@ -1,5 +1,5 @@
 ---
-title: Cutting with Friends at McCarren Park, Brooklyn
+title: 和朋友在布魯克林 McCarren 公園一起 Cutting
 summary: 2017 年 10 月 13 日，我把一台電池供電的 Numark PT01 Scratch 放在布魯克林 McCarren 公園一張灑滿陽光的野餐桌上——這座公園是威廉斯堡（Williamsburg）與綠點（Greenpoint）之間、整個北布魯克林共用的大後院——和兩位紐約刷碟 DJ @turtlescratch、@talamarc 輪流切了一整個下午。這篇寫的，就是在紐約公園裡三個人一起玩便攜唱盤，真正是什麼感覺。
 date: 2017-10-13T12:00:00
 section: scratch-the-world
