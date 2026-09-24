@@ -1,5 +1,5 @@
 ---
-title: Playing Tourist with a Turntable at Rockefeller Center
+title: 在洛克斐勒中心當一回帶著唱盤的觀光客
 summary: 2017 年 10 月 21 日，我坐在洛克斐勒中心下沉廣場邊緣的花台上，把一台電池供電的 Numark PT01 Scratch 放在膝蓋上，在一整圈國旗底下刷了幾小節，頭頂就是直衝天際的 30 Rock。這篇寫的，就是在曼哈頓中城最有名、而且是私人管理的廣場上刷碟，真正是什麼感覺。
 date: 2017-10-21T12:00:00
 section: scratch-the-world
