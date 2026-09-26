@@ -1,5 +1,5 @@
 ---
-title: 'Cavaliers Five: Scratching Under Lambert Castle in Paterson, New Jersey'
+title: 城堡下的五騎士：在紐澤西帕特森蘭伯特城堡刷碟
 summary: 2017 年 10 月 22 日，我們五個人各自提著一台電池供電的 Numark PT01 Scratch，爬上紐澤西州帕特森（Paterson）Garret 山坡上的蘭伯特城堡（Lambert Castle）——一座 1892 年用石頭蓋成、原名「Belle Vista」的豪宅——在秋天的陽光下一個接一個把 scratch 傳下去。這篇寫的，就是在俯瞰「絲綢之城」、遠方還看得到曼哈頓天際線的鍍金時代城堡前刷碟，是什麼感覺。
 date: 2017-10-22T12:00:00
 section: scratch-the-world
