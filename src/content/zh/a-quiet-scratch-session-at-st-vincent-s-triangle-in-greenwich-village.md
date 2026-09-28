@@ -1,5 +1,5 @@
 ---
-title: A Quiet Scratch Session at St Vincent's Triangle in Greenwich Village
+title: 在格林威治村聖文森三角公園的一場安靜刷碟
 summary: 2017 年 10 月 29 日，我坐在格林威治村聖文森三角公園（St. Vincent's Triangle）裡、紐約市愛滋紀念碑的白色鋼構頂篷下，用電池供電的 Numark PT01 安安靜靜地刷了一場，十月底的陽光從百葉條間斜斜灑下來。這篇寫的，是在格林威治村的紀念公園裡刷碟是什麼感覺，以及怎麼做才算尊重這個地方。
 date: 2017-10-29T12:00:00
 section: scratch-the-world
