@@ -1,5 +1,5 @@
 ---
-title: Passing Cuts on the Hoboken Waterfront, New Jersey
+title: 隔著哈德遜河：在紐澤西霍博肯濱水區接力刷碟
 summary: 2017 年 10 月 30 日，我們四個人在紐澤西州霍博肯（Hoboken）的濱水區擺開電池供電的 Numark PT01 Scratch，把 scratch 一段一段往下傳，而整片曼哈頓天際線就攤在哈德遜河對岸、我們面前。這篇寫的，就是在霍博肯濱水區刷碟、回頭望著我們平常刷碟的那座城市，是什麼感覺。
 date: 2017-10-30T12:00:00
 section: scratch-the-world
