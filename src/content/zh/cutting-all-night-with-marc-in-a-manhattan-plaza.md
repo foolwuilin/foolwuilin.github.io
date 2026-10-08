@@ -1,5 +1,5 @@
 ---
-title: Cutting All Night with Marc in a Manhattan Plaza
+title: 在曼哈頓廣場和 Marc 通宵 Cutting
 summary: 2017 年 11 月 1 日深夜，我把電池供電的 Numark PT01 Scratch 擺在曼哈頓一處燈光閃爍的廣場石桌上，和好友 Marc（@talamarc）整晚輪流 cut。這篇聊聊在紐約廣場通宵玩可攜式唱盤是什麼感覺，以及怎麼玩得安靜、不被請走。
 date: 2017-11-01T12:00:00
 section: scratch-the-world
