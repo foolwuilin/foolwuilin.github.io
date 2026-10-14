@@ -60,4 +60,4 @@ Numark PT01 Scratch，一台內建 Mixfader 的電池供電可攜式唱盤，小
 
 ## 接下來去哪裡
 
-如果你喜歡紐約的公園現場，可以讀讀[和 Marc 在曼哈頓廣場刷碟一整晚](/zh-tw/cutting-all-night-with-marc-in-a-manhattan-plaza/)，或是[格林威治村聖文森三角公園的安靜刷碟](/zh-tw/a-quiet-scratch-session-at-st-vincent-s-triangle-in-greenwich-village/)。自己剛開始學刷碟嗎？從[基礎 Baby Scratch 教學](/zh-tw/tutorials/how-to-baby-scratch/)開始吧。
+如果你喜歡紐約的公園現場，可以讀讀[和 Marc 在曼哈頓廣場刷碟一整晚](/zh-tw/cutting-all-night-with-marc-in-a-manhattan-plaza/)，或是[格林威治村聖文森三角公園的安靜刷碟](/zh-tw/a-quiet-scratch-session-at-st-vincent-s-triangle-in-greenwich-village/)。自己剛開始學刷碟嗎？從[基礎 Baby Scratch 教學](/zh-tw/how-to-baby-scratch/)開始吧。
