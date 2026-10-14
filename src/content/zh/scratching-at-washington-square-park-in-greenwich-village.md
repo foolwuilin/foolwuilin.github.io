@@ -1,5 +1,5 @@
 ---
-title: Scratching at Washington Square Park in Greenwich Village
+title: 在格林威治村的華盛頓廣場公園刷碟
 summary: 2017 年 11 月 4 日，我在格林威治村的華盛頓廣場公園，把電池供電的 Numark PT01 Scratch 放在大理石拱門旁刷碟，秋天的落葉在腳邊翻飛。這篇文章帶你看看這座公園的聲音、氣味與氛圍，以及可攜式唱盤手該怎麼有禮貌地在這裡表演。
 date: 2017-11-04T12:00:00
 section: scratch-the-world
