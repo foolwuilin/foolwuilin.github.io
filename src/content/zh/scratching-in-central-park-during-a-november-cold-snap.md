@@ -58,4 +58,4 @@ Portablism 就是用小型攜帶式唱盤取代全尺寸 DJ 唱盤來刷碟，�
 
 ## 接下來去哪
 
-下一站可以看看 [在格林威治村華盛頓廣場公園刷碟](/zh-tw/scratching-at-washington-square-park-in-greenwich-village/)，如果你想自己試試，就從 [baby scratch 入門教學](/zh-tw/tutorials/how-to-baby-scratch/) 開始。
+下一站可以看看 [在格林威治村華盛頓廣場公園刷碟](/zh-tw/scratching-at-washington-square-park-in-greenwich-village/)，如果你想自己試試，就從 [baby scratch 入門教學](/zh-tw/how-to-baby-scratch/) 開始。
