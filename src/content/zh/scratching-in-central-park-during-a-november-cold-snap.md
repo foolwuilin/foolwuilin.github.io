@@ -1,5 +1,5 @@
 ---
-title: Scratching in Central Park During a November Cold Snap
+title: 寒流來襲的中央公園：十一月的刷碟
 summary: 2017 年 11 月 12 日，紐約氣溫急速下降，手指都凍僵了，我還是把 Numark PT01 Scratch 帶進中央公園，在光禿禿的榆樹與冬日光線之間刷了幾段。
 date: 2017-11-12T12:00:00
 section: scratch-the-world
