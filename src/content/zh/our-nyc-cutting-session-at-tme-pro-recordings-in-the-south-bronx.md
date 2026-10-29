@@ -1,5 +1,5 @@
 ---
-title: Our NYC Cutting Session at TME Pro Recordings in the South Bronx
+title: 南布朗克斯 T.M.E. PRO Recordings 的紐約 Cutting Session
 summary: 2017 年 11 月 13 日，我把凍僵的紐約街頭換成一間滿是唱盤的溫暖房間：在南布朗克斯 Lincoln Avenue 與 Bruckner Boulevard 轉角的嘻哈錄音室 T.M.E. PRO Recordings，和 Skratcher 紐澤西、紐約的夥伴們一起輪流刷碟。
 date: 2017-11-13T12:00:00
 section: scratch-the-world
