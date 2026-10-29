@@ -1,5 +1,5 @@
 ---
-title: Testing a Looper App on Mercer Street, Greenwich Village
+title: 在格林威治村 Mercer Street 試玩新的 Looper App
 summary: 2017 年 11 月 18 日,我在格林威治村、NYU 旁 Mercer Playground 外的 Mercer Street 人行道上架起一台電池供電的 Numark PT01 Scratch,在一個寒冷的午後安靜地配著一個新的 looper app 刷碟。這篇寫的是在村子裡這個低調的「練習口袋」玩便攜式刷碟是什麼感覺,以及怎麼做才不會引來一堆人圍觀。
 date: 2017-11-18T12:00:00
 section: scratch-the-world
