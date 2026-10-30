@@ -1,5 +1,5 @@
 ---
-title: Scratching in Times Square on Black Friday, New York
+title: 黑色星期五，在時代廣場刷碟
 summary: 2017 年黑色星期五，我帶著電池供電的 Numark PT01 走進時代廣場，在購物人潮的正中央、巨大的 LED 看板底下刷了幾段碟。這篇文章帶你看看，在全紐約最忙的廣場上玩可攜式唱盤是什麼感覺——青綠色的表演區框、刺骨的寒冷，以及怎麼刷才不會被請走。
 date: 2017-11-25T12:00:00
 section: scratch-the-world
