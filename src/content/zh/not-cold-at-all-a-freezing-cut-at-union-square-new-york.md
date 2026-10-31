@@ -1,5 +1,5 @@
 ---
-title: Not Cold at All, a Freezing Cut at Union Square New York
+title: 一點都不冷：寒冬裡在紐約聯合廣場和夥伴刷碟
 summary: 2017 年 11 月底一個寒冷的星期一，我和夥伴在曼哈頓聯合廣場南側的石階上刷碟——電池手提唱盤、凍僵的手指、農夫市集的帳篷，還有華盛頓騎馬像。這是在紐約這座「城市廣場」街頭刷碟的真實樣貌，以及如何合法地在這裡表演。
 date: 2017-11-27T12:00:00
 section: scratch-the-world
