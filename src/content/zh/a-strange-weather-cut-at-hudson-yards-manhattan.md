@@ -1,5 +1,5 @@
 ---
-title: A Strange-Weather Cut at Hudson Yards, Manhattan
+title: 天氣很怪也擋不住：哈德遜廣場的一場寒冬刷碟
 summary: 2017 年 12 月一個天氣古怪的午後，我在曼哈頓最西邊、還蓋到一半的哈德遜廣場放下電池手提唱盤，在工地圍籬後方的高樓與正長高的 Vessel 之間刷碟。這是在紐約最生、最新、最會起風的角落刷碟的真實樣貌。
 date: 2017-12-06T12:00:00
 section: scratch-the-world
