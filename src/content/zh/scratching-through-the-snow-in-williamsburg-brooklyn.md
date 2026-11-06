@@ -1,5 +1,5 @@
 ---
-title: Scratching Through the Snow in Williamsburg, Brooklyn
+title: 極端天氣也擋不住：威廉斯堡的一場雪中刷碟
 summary: 2017 年 12 月一個大雪紛飛、冷到刺骨的午後，我扛著一台電池供電的 Numark PT01 Scratch，走出 Bedford Avenue 的 L 線地鐵站，把它放在威廉斯堡（Williamsburg）的雪泥裡，隔著東河看著曼哈頓的天際線在雪花之間忽隱忽現。這就是在布魯克林的暴雪裡刷一台手提唱盤，真實的樣子。
 date: 2017-12-10T12:00:00
 section: scratch-the-world
