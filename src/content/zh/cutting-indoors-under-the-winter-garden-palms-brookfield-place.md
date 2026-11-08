@@ -1,5 +1,5 @@
 ---
-title: Cutting Indoors Under the Winter Garden Palms, Brookfield Place
+title: 室內刷碟也不錯：布魯克菲爾德廣場冬園的溫暖燈光
 summary: 2017 年 12 月一個冷到不行的傍晚，我對紐約的街頭認輸，把一台電池供電的 Numark PT01 Scratch 搬進布魯克菲爾德廣場那座發著光的冬園中庭，在四十五呎高的棕櫚樹和滿天節慶燈籠底下刷碟。這是在下曼哈頓最溫暖、最閃亮的大理石殿堂裡，刷一台手提唱盤的真實樣貌。
 date: 2017-12-17T12:00:00
 section: scratch-the-world
