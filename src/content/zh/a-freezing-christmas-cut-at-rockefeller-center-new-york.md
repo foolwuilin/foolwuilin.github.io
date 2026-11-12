@@ -1,5 +1,5 @@
 ---
-title: A Freezing Christmas Cut at Rockefeller Center, New York
+title: 寒冬裡的耶誕刷碟：紐約洛克斐勒中心
 summary: 2017 年耶誕節隔天，我帶著一台 Numark PT01 Scratch，走進一波破紀錄的北極寒流，在洛克斐勒中心的燈光下刷了幾段——這篇就聊聊，當體感溫度掉到零度以下，在曼哈頓中城街頭刷碟到底是什麼感覺。
 date: 2017-12-26T12:00:00
 section: scratch-the-world
