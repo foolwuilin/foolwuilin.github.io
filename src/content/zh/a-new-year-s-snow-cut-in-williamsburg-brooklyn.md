@@ -1,5 +1,5 @@
 ---
-title: A New Year's Snow Cut in Williamsburg, Brooklyn
+title: 元旦的第二回合：威廉斯堡雪地裡的刷碟
 summary: 2018 年元旦，我又把電池供電的手提唱盤扛回威廉斯堡的雪地裡，開始這個新年的第二回合刷碟——也在刺骨的低溫裡，親身學到哪一顆 crossfader 才真的撐得過布魯克林的寒流。這就是在接近零度的威廉斯堡、於戶外刷一台手提唱盤，真實的樣子。
 date: 2018-01-01T12:00:00
 section: scratch-the-world
