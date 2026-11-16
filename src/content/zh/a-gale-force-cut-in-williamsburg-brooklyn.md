@@ -1,5 +1,5 @@
 ---
-title: A Gale-Force Cut in Williamsburg, Brooklyn
+title: 狂風颳走我的滑墊：威廉斯堡的戶外刷碟
 summary: 2018 年一月一個暴風肆虐的日子，我在布魯克林威廉斯堡的濱水區架起手提唱盤——結果東河的一陣狂風，把我的滑墊從盤面上整個颳走。這就是在布魯克林、當天氣擺明要終結你的演出時，戶外刷碟真實的樣子。
 date: 2018-01-05T12:00:00
 section: scratch-the-world
